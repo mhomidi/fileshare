@@ -74,7 +74,8 @@ abbr {
 }
 
 #header {
-    background: #666 url(../images/ut_logo.png) no-repeat top left;
+    /*background: #666 url(../images/ut_logo.png) no-repeat top left;*/
+    background: white;
     height: 60px;
     margin-bottom: 1em;
 }
