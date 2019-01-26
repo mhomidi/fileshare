@@ -164,7 +164,8 @@ class GUI
      */
     public static function logo()
     {
-        $locations = self::filterSources(array());
+        $locations = self::filterSources(array(
+        ));
         
         return array_pop($locations);
     }
