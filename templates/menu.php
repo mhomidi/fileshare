@@ -10,7 +10,6 @@ $pagemenuitem = function($page) {
 
 <div id="menu">
     <div class="leftmenu">
-        salam
         <ul>
             <?php
             
