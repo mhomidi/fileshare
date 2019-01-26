@@ -160,13 +160,12 @@ class GUI
     /**
      * Get logo
      *
-     * @return http file path
+     * @return http file pathz
      */
     public static function logo()
     {
         $locations = self::filterSources(array(
-            'images/logo.png',
-            'skin/logo.png'
+
         ));
         
         return array_pop($locations);
