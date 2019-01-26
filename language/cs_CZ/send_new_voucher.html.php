@@ -1,0 +1,1 @@
+Pozvánka umožňuje hostovi poslat Vám soubor. <br /> Pro vytvoření pozvánky vložte emailovou adresu a klikněte Odeslat pozvánku.<br /> Příjemci bude odeslán email s odkazem na pozvánku.
