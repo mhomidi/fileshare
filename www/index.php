@@ -34,36 +34,36 @@ try {
     require_once('../includes/init.php');
     
     Logger::setProcess(ProcessTypes::GUI);
-    
-    try { // At that point we can render exceptions using nice html
-        Auth::isAuthenticated(); // Preload auth state
-        
-        Template::display('!!header');
-        
-        $page = GUI::currentPage();
-        $vars = array();
-        
-        if(!GUI::isUserAllowedToAccessPage($page)) {
-            if(Auth::isAuthenticated())
-                throw new GUIAccessForbiddenException($page);
-        
-            GUI::currentPage('logon');
-            $vars['access_forbidden'] = true;
-            
-            if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
-        }
-        
-        if(!in_array($page, array('download', 'maintenance')))
-            Template::display('menu');
-        
-        Template::display('page', array('vars' => $vars));
-        
-    } catch(Exception $e) {
-        Template::display('exception', array('exception' => $e));
-    }
-    
-    Template::display('!!footer');
-    
+//
+//    try { // At that point we can render exceptions using nice html
+//        Auth::isAuthenticated(); // Preload auth state
+//
+//        Template::display('!!header');
+//
+//        $page = GUI::currentPage();
+//        $vars = array();
+//
+//        if(!GUI::isUserAllowedToAccessPage($page)) {
+//            if(Auth::isAuthenticated())
+//                throw new GUIAccessForbiddenException($page);
+//
+//            GUI::currentPage('logon');
+//            $vars['access_forbidden'] = true;
+//
+//            if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
+//        }
+//
+//        if(!in_array($page, array('download', 'maintenance')))
+//            Template::display('menu');
+//
+//        Template::display('page', array('vars' => $vars));
+//
+//    } catch(Exception $e) {
+//        Template::display('exception', array('exception' => $e));
+//    }
+//
+//    Template::display('!!footer');
+//
 } catch(Exception $e) {
     // If all exceptions are catched as expected we should not get there
     die('An exception happened : '.$e->getMessage());
