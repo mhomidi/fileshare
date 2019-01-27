@@ -67,7 +67,8 @@ class GUI
             'lib/jquery/smoothness/jquery-ui-1.10.2.custom.min.css',
             'lib/font-awesome/css/font-awesome.min.css',
             'css/default.css',
-            'skin/styles.css'
+            'skin/styles.css',
+            'css/style.css'
         ));
     }
     
@@ -181,7 +182,7 @@ class GUI
             return;
         }
         
-        echo '<img id="logo" src="'.self::path($location).'" alt="'.Config::get('site_name').'" style="width: 60px;" />'."\n";
+        echo '<img id="logo" src="'.self::path($location).'" alt="'.Config::get('site_name').'" class="logo" />'."\n";
     }
     
     /**
