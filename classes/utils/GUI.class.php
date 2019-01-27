@@ -165,6 +165,7 @@ class GUI
     public static function logo()
     {
         $locations = self::filterSources(array(
+            'image/ut_logo.png',
         ));
         
         return array_pop($locations);

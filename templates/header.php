@@ -25,10 +25,6 @@
             <div id="header">
                 <a href="<?php echo GUI::path() ?>">
                     <?php GUI::includeLogo() ?>
-
-                    <?php if(!Config::get('site_name_in_header')) { ?>
-                        <div class="col-2 offset-5"><img src="../www/images/ut_logo.png" class="img-fluid"></div>
-                    <?php } ?>
                     
                     <?php if(Config::get('site_name_in_header')) { ?>
                     <div class="site_name"><?php echo Config::get('site_name') ?></div>
