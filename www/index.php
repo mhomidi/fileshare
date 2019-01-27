@@ -37,9 +37,9 @@ try {
     
     try { // At that point we can render exceptions using nice html
         Auth::isAuthenticated(); // Preload auth state
-        
+        echo Auth::isAuthenticated();
         Template::display('!!header');
-        
+
         $page = GUI::currentPage();
         $vars = array();
         
@@ -63,7 +63,7 @@ try {
     }
     
     Template::display('!!footer');
-    
+
 } catch(Exception $e) {
     // If all exceptions are catched as expected we should not get there
     die('An exception happened : '.$e->getMessage());
