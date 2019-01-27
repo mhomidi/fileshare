@@ -36,21 +36,21 @@ try {
     Logger::setProcess(ProcessTypes::GUI);
     
     try { // At that point we can render exceptions using nice html
-//        Auth::isAuthenticated(); // Preload auth state
+        Auth::isAuthenticated(); // Preload auth state
         Template::display('!!header');
 
         $page = GUI::currentPage();
         $vars = array();
         
-//        if(!GUI::isUserAllowedToAccessPage($page)) {
-//            if(Auth::isAuthenticated())
-//                throw new GUIAccessForbiddenException($page);
+        if(!GUI::isUserAllowedToAccessPage($page)) {
+            if(Auth::isAuthenticated())
+                throw new GUIAccessForbiddenException($page);
         
             GUI::currentPage('logon');
             $vars['access_forbidden'] = true;
             
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
-//        }
+        }
         
         if(!in_array($page, array('download', 'maintenance')))
             Template::display('menu');
