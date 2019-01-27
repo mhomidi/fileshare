@@ -37,7 +37,6 @@ try {
     
     try { // At that point we can render exceptions using nice html
         Auth::isAuthenticated(); // Preload auth state
-        echo Auth::isAuthenticated();
         Template::display('!!header');
 
         $page = GUI::currentPage();
