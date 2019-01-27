@@ -42,15 +42,15 @@ try {
         $page = GUI::currentPage();
         $vars = array();
         
-        if(!GUI::isUserAllowedToAccessPage($page)) {
-            if(Auth::isAuthenticated())
-                throw new GUIAccessForbiddenException($page);
+//        if(!GUI::isUserAllowedToAccessPage($page)) {
+//            if(Auth::isAuthenticated())
+//                throw new GUIAccessForbiddenException($page);
         
             GUI::currentPage('logon');
             $vars['access_forbidden'] = true;
             
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
-        }
+//        }
         
         if(!in_array($page, array('download', 'maintenance')))
             Template::display('menu');
