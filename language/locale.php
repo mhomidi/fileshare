@@ -64,5 +64,6 @@ $locales  =  array(
     'sl' => 'sl_SI',
     'sl-si' => 'sl_SI',
     'sr' => 'sr_RS',
-    'ru' => 'ru_RU'
+    'ru' => 'ru_RU',
+    'fa' => 'fa_IR'
 );
