@@ -45,8 +45,8 @@ try {
         if(!GUI::isUserAllowedToAccessPage($page)) {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);
-        
-            GUI::currentPage($p1);
+            echo "alam";
+            GUI::currentPage('upload');
             $vars['access_forbidden'] = true;
             
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
