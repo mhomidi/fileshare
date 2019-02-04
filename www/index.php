@@ -36,7 +36,8 @@ try {
     Logger::setProcess(ProcessTypes::GUI);
     
     try { // At that point we can render exceptions using nice html
-        Auth::isAuthenticated(); // Preload auth state
+        $a = Auth::isAuthenticated(); // Preload auth state
+        echo get_class($a);
         Template::display('!!header');
 
         $page = GUI::currentPage();
