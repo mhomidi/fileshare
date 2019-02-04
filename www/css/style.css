@@ -3,3 +3,7 @@
     margin: auto;
     display: block;
 }
+body {
+    text-align: right;
+    direction: rtl;
+}
