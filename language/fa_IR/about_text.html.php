@@ -1,4 +1,4 @@
-<h1>به{cfg:site_name}خوش آمدید</h1>
+<h1>Welcome to {cfg:site_name}</h1>
 <p>
     {cfg:site_name} is an installation of 
     the FileSender project (<a rel="nofollow" href="http://www.filesender.org/" target="_blank">www.filesender.org</a>)
