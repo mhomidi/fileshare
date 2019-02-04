@@ -269,7 +269,6 @@ class Auth
      */
     public static function isAuthenticated($critical = true)
     {
-        echo "salam";
 
         if (!self::$allowed) {
             throw new AuthUserNotAllowedException();
@@ -277,15 +276,20 @@ class Auth
 
         // command line cron, install, upgrade etc do not need a session
         if (Logger::isLocalProcess()) {
+            echo "salam1";
+
             return true;
         }
         
         try {
+            echo "salam2";
             return (bool)self::user();
         } catch (Exception $e) {
             if ($critical) {
+                echo "salam3";
                 throw $e;
             }
+            echo "salam4";
             return false;
         }
     }
