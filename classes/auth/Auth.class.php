@@ -280,6 +280,7 @@ class Auth
         
         try {
             echo (bool)self::user();
+            echo "slama";
             return (bool)self::user();
         } catch (Exception $e) {
             if ($critical) {
