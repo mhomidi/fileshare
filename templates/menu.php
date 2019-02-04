@@ -48,7 +48,7 @@ $pagemenuitem = function($page) {
             $pagemenuitem('about');
             $pagemenuitem('privacy');
 
-            if (/*Auth::isAuthenticated() && Auth::isSP()*/1) {
+            if (Auth::isAuthenticated() && Auth::isSP()) {
                 $url = AuthSP::logoffURL();
                 if($url)
                     echo '<li><a href="'.Utilities::sanitizeOutput($url).'" id="topmenu_logoff">'.Lang::tr('logoff').'</a></li>';
