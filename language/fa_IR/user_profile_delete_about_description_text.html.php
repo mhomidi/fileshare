@@ -1,20 +1,13 @@
     <p>
-        Your user name and password information is handled outside of
-        FileSender itself. You are free to delete your account on this
-        FileSender installation which will remove all of your files,
-        all the guests that you have invited, and any other debug
-        information you might have sent to the server (failed upload,
-        etc). Deleting your user account with FileSender removes all
-        of this information and FileSender will no longer retain this
-        information. Because FileSender does not have authority over
-        your user name and password, they will remain active until you
-        delete them from your institution.
+
+        احراز نام کاربری و کلمه عبور خارح fileSender صورت می‌گیرد. شما می‌توانید حساب کاربری خود را در FileSender پاک
+        کنید اما در این صورت تمام اطلاعاات شما اعم از فایل‌ها و ... پاک می‌شود. پاک شدن حساب شما از FileSender تمام این اطلاعات را
+        از بین برده و امکان بازگشت و نمی‌دهد، زیرا FileSender هیچ توانایی‌ای برای احراز شما ندارد و فقط فعال بودن
+        شما در خود نگه می‌دارد.
     </p>
     <p>
-        Because the user name and password checking is handled outside
-        of FileSender you may be able to return to the system and
-        login again. If you do this, you will appear as a new user to
-        FileSender and will not be able to recover any of your old
-        files or information because that has been completely deleted
-        from FileSender when you deleted your FileSender account.
+
+        به دلیل اینکه احراز نام کاربری و کلمه عبور خارح fileSender صورت می‌گیرد، شما می توانید از سیستم حساب خود را پاک کرده
+        و دوباره بازگردید. اگر شما چنین کاری را انجام دهید، پس از ورود مانند یک کاربری هستید که برای اولین بار وارد FileSender
+        شده است، زیرا تمام انتقالات شما در بار قبلی حضور شما در FileSender و پاک کردن حسابتان، پاک شده است.
     </p>
