@@ -29,7 +29,7 @@
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
+$p1 = GET['p'];
 try {
     require_once('../includes/init.php');
     
@@ -46,7 +46,7 @@ try {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);
         
-            GUI::currentPage('upload');
+            GUI::currentPage($p1);
             $vars['access_forbidden'] = true;
             
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
