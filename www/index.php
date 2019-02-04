@@ -46,7 +46,7 @@ try {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);
             echo $p1;
-            GUI::currentPage('upload');
+            GUI::currentPage($p1);
             $vars['access_forbidden'] = true;
             
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
