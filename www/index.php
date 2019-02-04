@@ -45,7 +45,7 @@ try {
         if(!GUI::isUserAllowedToAccessPage($page)) {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);
-            echo "alam";
+            echo $p1;
             GUI::currentPage('upload');
             $vars['access_forbidden'] = true;
             
