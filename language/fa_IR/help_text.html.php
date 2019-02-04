@@ -1,40 +1,36 @@
-<h3>Welcome to FileSender</h3>
+<h3>به FileSender خوش آمدید</h3>
 
 <p>
-    FileSender is a web based application that allows authenticated
-    users to securely and easily send arbitrarily large files to other
-    users. Users without an account can be sent a guest upload voucher by an
-    authenticated user. FileSender is developed to the requirements of
-    the higher education and research community.
+
+    FileSender یک برنامه تحت وب است که به کاربران احراز شده چنین امکانی را می‌دهد تا ساده و امن فایل‌های بزرگ
+    را به کاربران دیگر ارسال کنند. کاربرانی که حسابی ندارند می‌توانند با داشتن گواهی ‌بارگذاری به عنوان مهمان
+    مطالب خود را ارسال کنند. FileSender برای تامین نیازهای جامعه‌ی تحصیل کرده گسترش بافته است.
 </p>
 
-<h4>For guests...</h4>
+<h4>برای مهمانان</h4>
 
 <p>
-    If you have been sent a guest voucher from this site you have been
-    invited to upload files one or more times. The simplest way to do
-    that is using the information contained in the invitation email.
-    When uploading as guest, be sure to verify that any links in the
-    guest invitation email are to a FileSender that is running on a
-    research facility you trust. If you are not expecting a guest link
-    from a facility you know then the email might not be legitimate.
+
+    اگر برای شما از این سابت گواهی‌ای ارسال گردیده‌است می توانید با آن یک یا چند بار اینکار را انجام دهید.
+    ساده‌ترین راه برای اینکار این است که اطلاعات را از طریق ایمیل دعوت نامه استفاده کنید.
+    هنگامی که به عنوان یک مهمان بارگذاری می‌کنید، حتما مطمئن شوید که ایمیل دعوت نامه از طرف FileSender مرکز مورد نظر باشد.
+    اگر شما انتظار دعوت نامه‌ای را نداشته‌اید، ‌آن دعوت نامه نامعتبر است.
+
 </p>
 <p>
-    The user who invited you to this system might have done so
-    allowing you to upload files and get a link to allow other folks
-    to download those files. If you can not get a link then you will
-    have to provide email address(es) of the people who you wish to
-    invite to download the uploaded files. 
+
+    کسی که شما را به این سامانه دعوت کرده است این امکان را به شما داده است که فایل‌ها را بارگذاری کنید و به دیگران این اجازه‌ را
+    بدهید که آن را دانلود کنند.
 </p>
 
-<h4>For authenticated users...</h4>
+<h4>برای کاربران احراز شده</h4>
 
 <p>
-    If this installation of FileSender is on your research facility
-    the login button on the top right of the page should let you login
-    using standard institutional account. If you are unsure
-    about what login credentials to use to access this FileSender then
-    please contact your local IT support.
+
+     اگر این برنامه از FileSender در امکانات مرکز شما باشد، دکمه ورود در سمت بالا راست صفحه به شما این
+    امکان را می‌دهد تا با حساب مرکز خود وارد آن شوید. اکر شما رمز عبور و یا نام کاربری خود را از مرکز
+    خود ندارید، باید با مسئول انفورماتیک خود تماس بگیرید.
+
 </p>
 
 <p>
@@ -42,7 +38,9 @@
     more times and either have FileSender email the recipients after
     your upload completes or provide you with a link to allow file
     download. You should also be able to invite other researchers to
-    the system to upload one or more files as a guest. 
+    the system to upload one or more files as a guest.
+
+
 </p>
 
 <h3>Possible Download Size Limitations</h3>
