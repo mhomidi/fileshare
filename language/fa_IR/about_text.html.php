@@ -1,9 +1,8 @@
 <h1 class="text-right">Welcome to {cfg:site_name}</h1>
+
 <p>
-    {cfg:site_name} is an installation of 
-    the FileSender project (<a rel="nofollow" href="http://www.filesender.org/" target="_blank">www.filesender.org</a>)
-    which is a web based application that allows authenticated users to
-    securely and easily send arbitrarily large files to other users.
+    {cfg:site_name} افزونه‌ایست برای FileSender (<a rel="nofollow" href="http://www.filesender.org/" target="_blank">www.filesender.org</a>),
+    که می توان به کمک آن، ملزومات جامعه تحصیل کرده را گسترش داد.
 </p>
 <p>
     Authentication of users is provided through <a rel="nofollow" href="http://simplesamlphp.org/" target="_blank">
