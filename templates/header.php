@@ -20,7 +20,8 @@
         <?php GUI::includeStylesheets() ?>
     </head>
     
-    <body data-security-token="<?php echo Utilities::getSecurityToken() ?>" data-auth-type="<?php echo Auth::type() ?>">
+    <body data-security-token="<?php echo Utilities::getSecurityToken() ?>" data-auth-type="<?php echo Auth::type() ?>"
+    style="text-align: right; direction: rtl">
         <div id="wrap">
             <div id="header">
                 <a href="<?php echo GUI::path() ?>">
