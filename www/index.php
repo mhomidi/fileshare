@@ -37,7 +37,6 @@ try {
     
     try { // At that point we can render exceptions using nice html
         $a = Auth::isAuthenticated(); // Preload auth state
-        echo get_class($a);
         Template::display('!!header');
 
         $page = GUI::currentPage();
@@ -48,7 +47,8 @@ try {
                 throw new GUIAccessForbiddenException($page);
             GUI::currentPage($p1);
             $vars['access_forbidden'] = true;
-            
+            echo get_class($a);
+
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
         }
         
