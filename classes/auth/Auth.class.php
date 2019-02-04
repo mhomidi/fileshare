@@ -225,23 +225,19 @@ class Auth
         if (self::$exception) {
             throw self::$exception;
         }
-        echo "salma1";
+
         if (self::$authClassLoadingCount) {
             return false;
         }
-        echo "salma2";
 
         try {
             self::$authClassLoadingCount++;
-            echo "salma3";
 
             $ret = self::user_protected();
             self::$authClassLoadingCount--;
             return $ret;
         } catch (Exception $e) {
             self::$authClassLoadingCount--;
-            echo "salma";
-
             self::$exception = $e;
             throw $e;
         }
@@ -273,7 +269,6 @@ class Auth
      */
     public static function isAuthenticated($critical = true)
     {
-
         if (!self::$allowed) {
             throw new AuthUserNotAllowedException();
         }
@@ -284,6 +279,7 @@ class Auth
         }
         
         try {
+            echo (bool)self::user();
             return (bool)self::user();
         } catch (Exception $e) {
             if ($critical) {
