@@ -270,6 +270,7 @@ class Auth
     public static function isAuthenticated($critical = true)
     {
         if (!self::$allowed) {
+            echo "salam";
             throw new AuthUserNotAllowedException();
         }
 
