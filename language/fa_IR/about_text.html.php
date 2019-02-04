@@ -1,8 +1,7 @@
 <h1 class="text-right">Welcome to {cfg:site_name}</h1>
 
 <p>
-    {cfg:site_name} افزونه‌ایست برای FileSender (<a rel="nofollow" href="http://www.filesender.org/" target="_blank">www.filesender.org</a>),
-    که می توان به کمک آن، ملزومات جامعه تحصیل کرده را گسترش داد.
+    {cfg:site_name} افزونه است برای Filesender  کخ می توان با آن .
 </p>
 <p>
     Authentication of users is provided through <a rel="nofollow" href="http://simplesamlphp.org/" target="_blank">
