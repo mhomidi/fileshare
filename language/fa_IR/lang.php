@@ -8,15 +8,15 @@
 // 
 ?>
 <?php
-$lang['about'] = 'About';
-$lang['about_page'] = 'About';
+$lang['about'] = 'درباره‌ی ما';
+$lang['about_page'] = 'درباره‌ی ما';
 $lang['access_forbidden'] = 'You are not allowed to access this page';
 $lang['action'] = 'Action that happened';
 $lang['actions'] = 'Actions';
 $lang['add_me_to_recipients'] = 'Include me as a recipient';
 $lang['add_recipient'] = 'Add a recipient';
 $lang['admin_config_section'] = 'Config';
-$lang['admin_guests_section'] = 'Guests';
+$lang['admin_guests_section'] = 'مهمانان';
 $lang['admin_page'] = 'Admin';
 $lang['admin_statistics_section'] = 'Statistics';
 $lang['admin_transfers_section'] = 'Transfers';
@@ -209,8 +209,8 @@ $lang['guests'] = 'Guests';
 $lang['guests_page'] = 'Guests';
 $lang['guests_transfers'] = 'Guests transfers';
 $lang['gui_unknown_admin_section'] = 'Unknown admin section';
-$lang['help'] = 'Help';
-$lang['help_page'] = 'Help';
+$lang['help'] = 'کمک';
+$lang['help_page'] = 'کمک';
 $lang['hide_details'] = 'Hide details';
 $lang['host_quota'] = 'Host quota';
 $lang['host_quota_usage'] = 'Host quota usage';
@@ -224,8 +224,8 @@ $lang['is_default'] = 'This is the default value';
 $lang['last_activity'] = 'Last activity';
 $lang['later'] = 'Ask me again later';
 $lang['load'] = 'Load failed transfer';
-$lang['logoff'] = 'Log-off';
-$lang['logon'] = 'Login';
+$lang['logoff'] = 'خروج';
+$lang['logon'] = 'ورود';
 $lang['mac_archive_message'] = 'This compressed archive (.zip file) will be too big for the standard uncompress utility of Apple OS X.<br />  You\'ll find a alternative uncompress software here : <a href="{cfg:mac_unzip_link}" target="_blank">{cfg:mac_unzip_name}</a>.';
 $lang['maintenance_autoresume'] = 'Your operations will automatically resume when maintenance ends.';
 $lang['make_default'] = 'Go back to default value';
@@ -412,7 +412,7 @@ $lang['undergoing_maintenance'] = 'This application is under maintenance';
 $lang['unexpected_file'] = 'This file is not part of the restarting transfer';
 $lang['unknown_page'] = 'Unknown page';
 $lang['upload_log_header'] = 'Major upload messages';
-$lang['upload_page'] = 'Upload';
+$lang['upload_page'] = 'بارگذاری';
 $lang['upload_page_graph_encryption_in_transit'] = 'Encryption in transit';
 $lang['upload_page_graph_encryption_in_transit_and_rest'] = 'Encryption in transit & rest';
 $lang['upload_page_graph_mb_per_second'] = 'MB/sec';
@@ -430,7 +430,7 @@ $lang['user_id'] = 'Identifiant';
 $lang['user_lang'] = 'Prefered language';
 $lang['user_missing_uid'] = 'User UID not found';
 $lang['user_not_found'] = 'User not found';
-$lang['user_page'] = 'My profile';
+$lang['user_page'] = 'پروفایل من';
 $lang['user_preferences'] = 'Preferences';
 $lang['user_quota'] = 'User quota';
 $lang['user_remote_authentication'] = 'Remote authentication';
@@ -447,7 +447,7 @@ $lang['you_can_report_exception_by_email'] = 'You can report this error by email
 $lang['you_can_send_client_logs'] = 'In order to help your support team to find out what happened you can send the last log entries from your user interface by clicking this button :';
 $lang['empty_file'] = 'Empty file';
 
-$lang['privacy_page'] = 'Privacy';
+$lang['privacy_page'] = 'حریم خصوصی';
 $lang['privacy_page_days_old_table_text'] = 'Number of days information is retained';
 $lang['value'] = 'Value';
 $lang['description'] = 'Description';
