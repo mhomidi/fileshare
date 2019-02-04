@@ -225,19 +225,23 @@ class Auth
         if (self::$exception) {
             throw self::$exception;
         }
-
+        echo "salma1";
         if (self::$authClassLoadingCount) {
             return false;
         }
+        echo "salma2";
 
         try {
             self::$authClassLoadingCount++;
+            echo "salma3";
 
             $ret = self::user_protected();
             self::$authClassLoadingCount--;
             return $ret;
         } catch (Exception $e) {
             self::$authClassLoadingCount--;
+            echo "salma";
+
             self::$exception = $e;
             throw $e;
         }
@@ -276,20 +280,15 @@ class Auth
 
         // command line cron, install, upgrade etc do not need a session
         if (Logger::isLocalProcess()) {
-            echo "salam1";
-
             return true;
         }
         
         try {
-            echo "salam2";
             return (bool)self::user();
         } catch (Exception $e) {
             if ($critical) {
-                echo "salam3";
                 throw $e;
             }
-            echo "salam4";
             return false;
         }
     }
