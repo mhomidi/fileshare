@@ -5,8 +5,6 @@
         
         <title><?php echo htmlspecialchars(Config::get('site_name')); ?></title>
         
-        <?php GUI::includeStylesheets() ?>
-        
         <?php GUI::includeFavicon() ?>
         
         <?php GUI::includeScripts() ?>
@@ -18,6 +16,8 @@
         <meta name="robots" content="noindex, nofollow" />
         
         <meta name="auth" content="noindex, nofollow" />
+
+        <?php GUI::includeStylesheets() ?>
     </head>
     
     <body data-security-token="<?php echo Utilities::getSecurityToken() ?>" data-auth-type="<?php echo Auth::type() ?>">
