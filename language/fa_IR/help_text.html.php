@@ -40,24 +40,33 @@
     download. You should also be able to invite other researchers to
     the system to upload one or more files as a guest.
 
+    شما به عنوان کاربر احراز شده می‌توانید فایل‌ها را یک یا چند بار بارگذاری کنید و برای دانلود می‌توانید
+    یک لینک برای گیرندگان آن فایل بفرستید. همچنین می‌توانید به سایز تحضیل کردگان دعوتنامه ارسال کنید.
+
 
 </p>
 
 <h3>Possible Download Size Limitations</h3>
+<h3>امکان دانلود با هر حجمی</h3>
 <p>
     Any modern browser will download files of any size from the site.
     Nothing special is required for downloads.
+
+    تمام مرورگرهای جدید می‌توانند هر فایلی را با هر حجمی دانلود کنند
 </p>
 
-<h3>Possible Upload Size Limitations</h3>
+<h3>Pامکان بارکذاری با هر حجمی</h3>
 
 <p>
     If your browser supports HTML5 then you should be able to upload
     files of any size up to {size:cfg:max_transfer_size}. Current versions of Firefox and Chrome on
     Windows, Mac OS X and Linux are known to have HTML5 support.
+
+    اگر مرورگر شما از HTML5 پشتبانی می‌کند، شما می‌توانید هر فایلی را حداکثر به میزان {size:cfg:max_transfer_size} بارگذاری کنید.
 </p>
 
 <h3>Your browser's features</h3>
+<h3>ویژگی‌های مرورگر شما</h3>
 <ul class="fa-ul">
     <li data-feature="html5"><img src="images/html5_installed.png" alt="HTML5 upload enabled" /> You can upload files of any size up to {size:cfg:max_transfer_size} per transfer and you can resume uploads.</li>
     <li data-feature="nohtml5"><img src="images/html5_none.png" alt="HTML5 upload disabled" /> You can upload files of at most {size:cfg:max_legacy_file_size} each and up to {size:cfg:max_transfer_size} per transfer.</li>
