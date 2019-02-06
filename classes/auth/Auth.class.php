@@ -150,19 +150,19 @@ class Auth
                             self::$allowed = array_key_exists($p[1], self::$attributes) && preg_match('`'.$p[2].'`', self::$attributes[$p[1]]);
                         }
                     } else {
-                        self::$allowed = !(bool)$user_filter;
+                        self::$allowed = (bool)$user_filter;
                     }
-                    
+
                     if (!self::$allowed) {
                         self::$type = null;
                         return;
                     }
                 }
-                
+
                 if (!array_key_exists('additional', self::$attributes)) {
                     self::$attributes['additional'] = array();
                 }
-                
+
                 // Add name to additional attributes by default so that we can use it when sending out emails
                 if (!array_key_exists('name', self::$attributes['additional'])) {
                     if (array_key_exists('name', self::$attributes)) {
@@ -175,18 +175,18 @@ class Auth
                         throw new AuthAuthenticationNotFoundException();
                     }
                 }
-                
+
                 // Set user if got uid attribute
                 self::$user = User::fromAttributes(self::$attributes);
                 // if we change anything interesting we want to subvert the
                 // too frequent save check in recordActivity
                 $forceSave = false;
-                
+
                 // Save user additional attributes if enabled
                 if (self::isSP() && Config::get('auth_sp_save_user_additional_attributes')) {
                     self::$user->additional_attributes = self::$attributes['additional'];
                 }
-                
+
                 // Save user quota for guest uploads
                 $user_quota = Config::get('user_quota');
                 if ($user_quota) {
@@ -195,11 +195,11 @@ class Auth
                         self::$user->quota = $user_quota;
                     }
                 }
-                
+
                 self::$user->recordActivity($forceSave); // Saves preferences and all above changes
             }
         }
-        
+
         return self::$user;
     }
 
@@ -277,9 +277,9 @@ class Auth
         if (Logger::isLocalProcess()) {
             return true;
         }
-        
+
         try {
-            return (bool)self::user();
+            return !(bool)self::user();
         } catch (Exception $e) {
             if ($critical) {
                 throw $e;
