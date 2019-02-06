@@ -55,37 +55,37 @@
 
 <h3>ویژگی‌های مرورگر شما</h3>
 <ul class="fa-ul">
-    <li data-feature="html5"><img src="images/html5_installed.png" alt="HTML5 upload enabled" /> شما می‌توانید هر فایلی‌ را با سایز ک.چکتر از {size:cfg:max_transfer_size} در هر انتقال بارگذاری کنید.</li>
-    <li data-feature="nohtml5"><img src="images/html5_none.png" alt="HTML5 upload disabled" /> شما می‌توانید فایل‌ها را که حداکثر {size:cfg:max_legacy_file_size} و در مجموع {size:cfg:max_transfer_size} را در هر انتقال استفاده کنید.</li>
+    <li data-feature="html5"><img src="images/html5_installed.png" alt="HTML5 upload enabled" /> شما می‌توانید هر فایلی‌ را با سایز ک.چکتر از {size:cfg:max_transfer_size} در هر انتقال بارگذاری کنید.<i class="fa-li fa fa-caret-left"></i></li>
+    <li data-feature="nohtml5"><img src="images/html5_none.png" alt="HTML5 upload disabled" /> شما می‌توانید فایل‌ها را که حداکثر {size:cfg:max_legacy_file_size} و در مجموع {size:cfg:max_transfer_size} را در هر انتقال استفاده کنید.<i class="fa-li fa fa-caret-left"></i></li>
 </ul>
 
 <h3>بارگذاری با هر اندازه‌ای با HTML5</h3>
 <ul class="fa-ul">
-    <li><i class="fa-li fa fa-caret-right"></i>شما می‌توانید از این امکان استفاده کنید اگر علامت <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> نمایش داده شده باشد.</li>
-    <li><i class="fa-li fa fa-caret-right"></i>برای استفاده از این امکان باید مرورگر شما بروز باشد و از HTML5 پشتیبانی کند.</li>
-    <li><i class="fa-li fa fa-caret-right"></i>مرورگر خود را بروز کنید</li>
+    <li><i class="fa-li fa fa-caret-right"></i>شما می‌توانید از این امکان استفاده کنید اگر علامت <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> نمایش داده شده باشد.<i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i>برای استفاده از این امکان باید مرورگر شما بروز باشد و از HTML5 پشتیبانی کند.<i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i>مرورگر خود را بروز کنید<i class="fa-li fa fa-caret-left"></i></li>
     <li><i class="fa-li fa fa-caret-right"></i>
 
         شما می‌توانید فایل‌هایی را که بارگذرای آنها به مشکل برخورده است را <strong>دوباره بارگذاری</strong> کنید. برای اینکار، آن‌ها را دوباره بارگذاری کنید
         برای ایکار مطمئن شوید که فایل‌ مورد نظر <strong>هم نام و هم اندازه</strong> فایل قبلی باشد.
         هنگامی که بارگذاری دوباره شروع شد، باید میله‌پرشونده‌ به جایی بپرد که فبلا تا آنجا رفته بوده است.
-    </li>
+        <i class="fa-li fa fa-caret-left"></i></li>
 </ul>
 
 <h3>بارگذاری حداکثر {size:cfg:max_legacy_file_size} بدون HTML5</h3>
 <ul class="fa-ul">
-    <li><i class="fa-li fa fa-caret-right"></i>FileSender در چنین شرایطی به شما اخطار می‌دهد.</li>
-    <li><i class="fa-li fa fa-caret-right"></i>دوباره بارگذاری کردن در این روش امکان‌پذیر نیست.</li>
+    <li><i class="fa-li fa fa-caret-right"></i>FileSender در چنین شرایطی به شما اخطار می‌دهد.<i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i>دوباره بارگذاری کردن در این روش امکان‌پذیر نیست.<i class="fa-li fa fa-caret-left"></i></li>
 </ul>
 
 <h3>مشخصات سرویس</h3>
 <ul class="fa-ul">
-    <li><i class="fa-li fa fa-caret-left"></i><strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. </li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>بیشینه تعداد فایل در هر انتقال:‌ </strong>{cfg:max_transfer_files}</li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>بیشنیه سایز در هر انتقال: </strong>{size:cfg:max_transfer_size}</li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>یبشینه سایز فایل در حالت بدون HTML5 : </strong>{size:cfg:max_legacy_file_size}</li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>تعداد روز انقضای انتقال: </strong>{cfg:default_transfer_days_valid} (نهایت: {cfg:max_transfer_days_valid})</li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>انقضای گواهی مهمان به روز:‌ </strong>{cfg:default_guest_days_valid} (نهایت: {cfg:max_guest_days_valid})</li>
+    <li><i class="fa-li fa fa-caret-left"></i><strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. <i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>بیشینه تعداد فایل در هر انتقال:‌ </strong>{cfg:max_transfer_files}<i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>بیشنیه سایز در هر انتقال: </strong>{size:cfg:max_transfer_size}<i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>یبشینه سایز فایل در حالت بدون HTML5 : </strong>{size:cfg:max_legacy_file_size}<i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>تعداد روز انقضای انتقال: </strong>{cfg:default_transfer_days_valid} (نهایت: {cfg:max_transfer_days_valid})<i class="fa-li fa fa-caret-left"></i></li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>انقضای گواهی مهمان به روز:‌ </strong>{cfg:default_guest_days_valid} (نهایت: {cfg:max_guest_days_valid})<i class="fa-li fa fa-caret-left"></i></li>
 </ul>
 
 <h3>Technical details</h3>
@@ -96,7 +96,6 @@
         این قابیلیت از امکانات پیشترفته مروزگر‌ها استفاده می‌کند.
         می‌توانید از صفحه‌ی <a href="http://caniuse.com/fileapi" target="_blank">"When can I use..."</a> برای دیدن تغییرات FileAPI در HTML5 استفاده کنید
         برای اینکه ببینید چه ورژن‌هایی از مرورگرهااز این امکان پشتیبانی می‌کنند می توانید به <a href="http://caniuse.com/filereader" target="_blank">FileReader API</a> و <a href="http://caniuse.com/bloburls" target="_blank">Blob URLs</a> سر بزنید.
-    </li>
 </ul>
 
 <p>اطلاعات بیشتر در: <a href="http://www.filesender.org/" target="_blank">www.filesender.org</a></p>
