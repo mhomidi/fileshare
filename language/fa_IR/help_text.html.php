@@ -80,7 +80,7 @@
 
 <h3>مشخصات سرویس</h3>
 <ul class="fa-ul">
-    <li><i class="fa-li fa fa-caret-right"></i><strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. </li>
+    <li><i class="fa-li fa fa-caret-left"></i><strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. </li>
     <li><i class="fa-li fa fa-caret-right"></i><strong>بیشینه تعداد فایل در هر انتقال:‌ </strong>{cfg:max_transfer_files}</li>
     <li><i class="fa-li fa fa-caret-right"></i><strong>بیشنیه سایز در هر انتقال: </strong>{size:cfg:max_transfer_size}</li>
     <li><i class="fa-li fa fa-caret-right"></i><strong>یبشینه سایز فایل در حالت بدون HTML5 : </strong>{size:cfg:max_legacy_file_size}</li>
