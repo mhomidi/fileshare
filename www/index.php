@@ -29,38 +29,39 @@
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-$p1 = $_GET['p'];
+
 try {
     require_once('../includes/init.php');
-    
+
     Logger::setProcess(ProcessTypes::GUI);
-    
+
     try { // At that point we can render exceptions using nice html
-        $a = Auth::isAuthenticated(); // Preload auth state
+        Auth::isAuthenticated(); // Preload auth state
+
         Template::display('!!header');
 
         $page = GUI::currentPage();
         $vars = array();
-        
+
         if(!GUI::isUserAllowedToAccessPage($page)) {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);
-            GUI::currentPage($p1);
+
+            GUI::currentPage('logon');
             $vars['access_forbidden'] = true;
-            echo get_class('logon');
 
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
         }
-        
+
         if(!in_array($page, array('download', 'maintenance')))
             Template::display('menu');
-        
+
         Template::display('page', array('vars' => $vars));
-        
+
     } catch(Exception $e) {
         Template::display('exception', array('exception' => $e));
     }
-    
+
     Template::display('!!footer');
 
 } catch(Exception $e) {
