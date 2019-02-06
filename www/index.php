@@ -47,7 +47,7 @@ try {
                 throw new GUIAccessForbiddenException($page);
             GUI::currentPage($p1);
             $vars['access_forbidden'] = true;
-            echo get_class($a);
+            echo get_class('logon');
 
             if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
         }
