@@ -279,7 +279,7 @@ class Auth
         }
 
         try {
-            return (bool)self::user();
+            return !(bool)self::user();
         } catch (Exception $e) {
             if ($critical) {
                 throw $e;
