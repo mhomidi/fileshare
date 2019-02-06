@@ -67,8 +67,7 @@ class GUI
             'lib/jquery/smoothness/jquery-ui-1.10.2.custom.min.css',
             'lib/font-awesome/css/font-awesome.min.css',
             'css/default.css',
-            'skin/styles.css',
-            'css/style.css'
+            'skin/styles.css'
         ));
     }
     
@@ -161,12 +160,13 @@ class GUI
     /**
      * Get logo
      *
-     * @return http file pathz
+     * @return http file path
      */
     public static function logo()
     {
         $locations = self::filterSources(array(
             'images/logo.png',
+            'skin/logo.png'
         ));
         
         return array_pop($locations);
@@ -182,7 +182,7 @@ class GUI
             return;
         }
         
-        echo '<img id="logo" src="'.self::path($location).'" alt="'.Config::get('site_name').'" class="logo" />'."\n";
+        echo '<img id="logo" src="'.self::path($location).'" alt="'.Config::get('site_name').'" />'."\n";
     }
     
     /**

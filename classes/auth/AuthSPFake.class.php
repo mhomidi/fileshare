@@ -67,6 +67,7 @@ class AuthSPFake
         if (is_null(self::$isAuthenticated)) {
             self::$isAuthenticated = Config::get('auth_sp_fake_authenticated');
         }
+        
         return self::$isAuthenticated;
     }
     

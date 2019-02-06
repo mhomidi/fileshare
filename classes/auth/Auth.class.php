@@ -150,7 +150,7 @@ class Auth
                             self::$allowed = array_key_exists($p[1], self::$attributes) && preg_match('`'.$p[2].'`', self::$attributes[$p[1]]);
                         }
                     } else {
-                        self::$allowed = (bool)$user_filter;
+                        self::$allowed = !(bool)$user_filter;
                     }
                     
                     if (!self::$allowed) {
@@ -279,7 +279,7 @@ class Auth
         }
         
         try {
-            return !(bool)self::user();
+            return (bool)self::user();
         } catch (Exception $e) {
             if ($critical) {
                 throw $e;
