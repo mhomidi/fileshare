@@ -88,7 +88,7 @@
     <li><strong>انقضای گواهی مهمان به روز:‌ </strong>{cfg:default_guest_days_valid} (نهایت: {cfg:max_guest_days_valid})</li>
 </ul>
 
-<h3>Technical details</h3>
+<h3>جزئیات پیشرفته</h3>
 <ul class="fa-ul">
     <li>
         <strong>{cfg:site_name}</strong><a href="http://www.filesender.org/" target="_blank">FileSender software</a> استفاده می‌کند.
