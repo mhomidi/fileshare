@@ -74,19 +74,19 @@ $default = array(
     'ban_extension' => 'exe,bat',
     'extension_whitelist_regex' => '^[a-zA-Z0-9]*$', // a valid file extension must match this regex
     
-    'max_transfer_size' => 107374182400,
-    'max_transfer_recipients' => 50,
-    'max_transfer_files' => 30,
-    'max_transfer_days_valid' => 90,
-    'default_transfer_days_valid' => 50,
+    'max_transfer_size' => 1024*1024*1024,
+    'max_transfer_recipients' => 3,
+    'max_transfer_files' => 2,
+    'max_transfer_days_valid' => 1,
+    'default_transfer_days_valid' => 2,
     'failed_transfer_cleanup_days' => 7,
     'transfer_recipients_lang_selector_enabled' => false,
     'max_transfer_file_size' => 0,
     'max_transfer_encrypted_file_size' => 0,
     
-    'max_guest_recipients' => 50,
+    'max_guest_recipients' => 0,
     
-    'max_legacy_file_size' => 2147483648,
+    'max_legacy_file_size' => 1024*1024*1024,
     'legacy_upload_progress_refresh_period' => 5,
     'upload_chunk_size' => 5 * 1024 * 1024,
     'chunk_upload_security' => 'key',
@@ -145,9 +145,9 @@ $default = array(
     'message_can_not_contain_urls_regex' => '',
 //    'message_can_not_contain_urls_regex' => '(ftp:|http[s]*:|[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})',
 
-    'guest_limit_per_user' => 50,
-    'guest_reminder_limit' => 50,
-    'recipient_reminder_limit' => 50,
+    'guest_limit_per_user' => 0,
+    'guest_reminder_limit' => 0,
+    'recipient_reminder_limit' => 0,
 
     'autocomplete' => false, 
     'autocomplete_min_characters' => 3,
