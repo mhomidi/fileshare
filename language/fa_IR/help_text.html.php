@@ -61,7 +61,7 @@
 
 <h3>بارگذاری با هر اندازه‌ای با HTML5</h3>
 <ul class="fa-ul pull-right">
-    <li><i class="fa-li fa fa-caret-right"></i>شما می‌توانید از این امکان استفاده کنید اگر علامت <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> نمایش داده شده باشد.</li>
+    <li class="pull-right"><i class="fa-li fa fa-caret-right"></i>شما می‌توانید از این امکان استفاده کنید اگر علامت <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> نمایش داده شده باشد.</li>
     <li><i class="fa-li fa fa-caret-right"></i>برای استفاده از این امکان باید مرورگر شما بروز باشد و از HTML5 پشتیبانی کند.</li>
     <li><i class="fa-li fa fa-caret-right"></i>مرورگر خود را بروز کنید</li>
     <li><i class="fa-li fa fa-caret-right"></i>
