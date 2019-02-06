@@ -60,11 +60,11 @@
 </ul>
 
 <h3>بارگذاری با هر اندازه‌ای با HTML5</h3>
-<ul class="fa-ul">
-    <li>شما می‌توانید از این امکان استفاده کنید اگر علامت <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> نمایش داده شده باشد.</li>
-    <li>برای استفاده از این امکان باید مرورگر شما بروز باشد و از HTML5 پشتیبانی کند.</li>
-    <li>مرورگر خود را بروز کنید</li>
-    <li>
+<ul class="fa-ul pull-right">
+    <li><i class="fa-li fa fa-caret-right"></i>شما می‌توانید از این امکان استفاده کنید اگر علامت <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> نمایش داده شده باشد.</li>
+    <li><i class="fa-li fa fa-caret-right"></i>برای استفاده از این امکان باید مرورگر شما بروز باشد و از HTML5 پشتیبانی کند.</li>
+    <li><i class="fa-li fa fa-caret-right"></i>مرورگر خود را بروز کنید</li>
+    <li><i class="fa-li fa fa-caret-right"></i>
 
         شما می‌توانید فایل‌هایی را که بارگذرای آنها به مشکل برخورده است را <strong>دوباره بارگذاری</strong> کنید. برای اینکار، آن‌ها را دوباره بارگذاری کنید
         برای ایکار مطمئن شوید که فایل‌ مورد نظر <strong>هم نام و هم اندازه</strong> فایل قبلی باشد.
@@ -74,8 +74,8 @@
 
 <h3>بارگذاری حداکثر {size:cfg:max_legacy_file_size} بدون HTML5</h3>
 <ul class="fa-ul">
-    <li>FileSender در چنین شرایطی به شما اخطار می‌دهد.</li>
-    <li>دوباره بارگذاری کردن در این روش امکان‌پذیر نیست.</li>
+    <li><i class="fa-li fa fa-caret-right"></i>FileSender در چنین شرایطی به شما اخطار می‌دهد.</li>
+    <li><i class="fa-li fa fa-caret-right"></i>دوباره بارگذاری کردن در این روش امکان‌پذیر نیست.</li>
 </ul>
 
 <h3>مشخصات سرویس</h3>
