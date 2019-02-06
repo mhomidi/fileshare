@@ -83,7 +83,7 @@
     <li><strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. </li>
     <li><strong>بیشینه تعداد فایل در هر انتقال:‌ </strong>{cfg:max_transfer_files}</li>
     <li><strong>بیشنیه سایز در هر انتقال: </strong>{size:cfg:max_transfer_size}</li>
-    <li style="direction: rtl"><strong>یبشینه سایز فایل در حالت بدون HTML5 : </strong>{size:cfg:max_legacy_file_size}</li>
+    <li style="direction: rtl; text-align: right;"><strong>یبشینه سایز فایل در حالت بدون HTML5 : </strong>{size:cfg:max_legacy_file_size}</li>
     <li><strong>تعداد روز انقضای انتقال: </strong>{cfg:default_transfer_days_valid} (نهایت: {cfg:max_transfer_days_valid})</li>
     <li><strong>انقضای گواهی مهمان به روز:‌ </strong>{cfg:default_guest_days_valid} (نهایت: {cfg:max_guest_days_valid})</li>
 </ul>
