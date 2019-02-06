@@ -182,7 +182,7 @@ class GUI
             return;
         }
         
-        echo '<img id="logo" src="'.self::path($location).'" alt="'.Config::get('site_name').'" style="width: 60px; display: block; margin: auto;"/>'."\n";
+        echo '<img id="logo" src="'.self::path($location).'" alt="'.Config::get('site_name').'" />'."\n";
     }
     
     /**
