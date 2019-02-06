@@ -68,19 +68,26 @@
 <h3>Your browser's features</h3>
 <h3>ویژگی‌های مرورگر شما</h3>
 <ul class="fa-ul">
-    <li data-feature="html5"><img src="images/html5_installed.png" alt="HTML5 upload enabled" /> You can upload files of any size up to {size:cfg:max_transfer_size} per transfer and you can resume uploads.</li>
-    <li data-feature="nohtml5"><img src="images/html5_none.png" alt="HTML5 upload disabled" /> You can upload files of at most {size:cfg:max_legacy_file_size} each and up to {size:cfg:max_transfer_size} per transfer.</li>
+    <li data-feature="html5"><img src="images/html5_installed.png" alt="HTML5 upload enabled" /> شما می‌توانید هر فایلی‌ را با سایز ک.چکتر از {size:cfg:max_transfer_size} در هر انتقال بارگذاری کنید.</li>
+    <li data-feature="nohtml5"><img src="images/html5_none.png" alt="HTML5 upload disabled" /> شما می‌توانید فایل‌ها را که حداکثر {size:cfg:max_legacy_file_size} و در مجموع {size:cfg:max_transfer_size} را در هر انتقال استفاده کنید.</li>
 </ul>
 
-<h3>Uploads of <i>any size</i> with HTML5</h3>
+<h3>بارگذاری با هر اندازه‌ای با HTML5</h3>
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-caret-right"></i>You'll be able to use this method if the <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> sign is displayed above</li>
+    <li><i class="fa-li fa fa-caret-right"></i>شما می‌توانید از این امکان استفاده کنید اگر علامت <img src="images/html5_installed.png" alt="HTML5 upload enabled" /> نمایش داده شده باشد.</li>
     <li><i class="fa-li fa fa-caret-right"></i>To enable this functionnality simply use an up to date browser that supports HTML5, the latest version of the "language of the web".</li>
+    <li><i class="fa-li fa fa-caret-right"></i>برای استفاده از این امکان باید مرورگر شما بروز باشد و از HTML5 پشتیبانی کند.</li>
     <li><i class="fa-li fa fa-caret-right"></i>Up to date versions of Firefox and Chrome on Windows, Mac OS X and Linux are known to work.</li>
+    <li><i class="fa-li fa fa-caret-right"></i>مرورگر خود را بروز کنید</li>
     <li><i class="fa-li fa fa-caret-right"></i>
         You can <strong>resume</strong> an interrupted or cancelled upload. To resume an upload, simply <strong>send the exact same files</strong> again !
         Make sure the files have the <strong>same names and sizes</strong> as before.
         When your upload starts, you should notice the progress bar jump to where the upload was halted, and continue from there.
+
+
+        شما می‌توانید فایل‌هایی را که بارگذرای آنها به مشکل برخورده است را <strong>دوباره بارگذاری</strong> کنید. برای اینکار، آن‌ها را دوباره بارگذاری کنید
+        برای ایکار مطمئن شوید که فایل‌ مورد نظر <strong>هم نام و هم اندازه</strong> فایل قبلی باشد.
     </li>
 </ul>
 
