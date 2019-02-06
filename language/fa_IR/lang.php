@@ -451,14 +451,14 @@ $lang['you_can_send_client_logs'] = 'In order to help your support team to find 
 $lang['empty_file'] = 'Empty file';
 
 $lang['privacy_page'] = 'حریم خصوصی';
-$lang['privacy_page_days_old_table_text'] = 'Number of days information is retained';
-$lang['value'] = 'Value';
-$lang['description'] = 'Description';
-$lang['privacy_page_max_transfer_days_valid'] = 'Maximum number of days until a transfer expires';
-$lang['privacy_page_clientlogs_lifetime'] = 'If a transfer fails you might be offered the ability to report the issue directly through this web interface. That report will be removed from the server database after this many days have passed.';
-$lang['privacy_page_translatable_emails_lifetime'] = 'Number of days emails sent to a user will be retained';
-$lang['privacy_page_guests_expired_lifetime'] = 'Once a guest has expired they are removed after this many days';
-$lang['privacy_page_auditlog_lifetime'] = 'Days that a log of what actions have happened is retained.';
+$lang['privacy_page_days_old_table_text'] = 'تعداد روزهایی که اطلاعات باقی می‌ماند';
+$lang['value'] = 'مقدار';
+$lang['description'] = 'توصیف';
+$lang['privacy_page_max_transfer_days_valid'] = 'بیشینه تعداد روز تا یک انتقال منقضی شود';
+$lang['privacy_page_clientlogs_lifetime'] = 'اگر انتقالی به درستی صورت نگرفت شما می‌توانید این مشکل را به سرور گزارس نمایید. این گزارش به این مدت باقی مانده و سپس پاک می‌شود.';
+$lang['privacy_page_translatable_emails_lifetime'] = 'تعداد روزهایی که ایمیل‌ها پس از ارسال باقی می‌ماند';
+$lang['privacy_page_guests_expired_lifetime'] = 'اگر یک مهمانی منقضی شود، تعداد روزهایی که پس از آن از پایگاه داده پاک می‌شود';
+$lang['privacy_page_auditlog_lifetime'] = 'تعداد روزهایی که لاگ برنامه می‌ماند';
 
 $lang['delete_my_account'] = 'Delete my account';
 $lang['confirm_delete_my_account'] = 'This will delete your files, guests, and other information from the FileSender installation. Continue?';
