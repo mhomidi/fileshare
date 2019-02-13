@@ -3,9 +3,6 @@
 
 $embed = Config::get('auth_sp_embed');
 header('Location: '.AuthSP::logonURL(), true);
-if(!$embed) $embed = '<a id="btn_logon" href="'.AuthSP::logonURL().'">'.Lang::tr('logon').'</a>';
-
-echo $embed;
 
 ?>
 
