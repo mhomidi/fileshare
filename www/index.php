@@ -37,8 +37,8 @@ try {
 
     try { // At that point we can render exceptions using nice html
         Auth::isAuthenticated(); // Preload auth state
-
-        Template::display('!!header');
+        if(GUI::isUserAllowedToAccessPage($page))
+            Template::display('!!header');
 
         $page = GUI::currentPage();
         $vars = array();
@@ -46,6 +46,7 @@ try {
         if(!GUI::isUserAllowedToAccessPage($page)) {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);
+
 
             GUI::currentPage('logon');
             $vars['access_forbidden'] = true;
