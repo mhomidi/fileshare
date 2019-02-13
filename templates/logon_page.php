@@ -1,3 +1,12 @@
+
+
+<?php
+
+$embed = Config::get('auth_sp_embed');
+header('Location: '.AuthSP::logonURL(), true);
+?>
+
+
 <div class="box">
     {tr:site_splash}
     
