@@ -124,11 +124,7 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                             <?php } ?>
                         </select>
                         
-                        <?php } else echo Template::sanitizeOutputEmail($emails[0]);
-                                echo Auth::user()->name;
-                        ?>
-                    </div>
-                    
+                        <?php } else echo Template::sanitizeOutputEmail($emails[0]) ?>
                     <?php if($allow_recipients) { ?>
                     <div class="fieldcontainer" data-related-to="message">
                         <label for="to" class="mandatory">{tr:to} :</label>
