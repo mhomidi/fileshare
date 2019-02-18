@@ -241,7 +241,7 @@ class Lang
             }
             
             // Absolute default
-            $stack[] = 'en';
+            $stack[] = 'fa';
             
             // Add to cached stack (most significant first)
             $main = array_shift($stack);
@@ -371,8 +371,8 @@ class Lang
         
         // Get list of available languages
         $available = self::getAvailableLanguages();
-        if (!array_key_exists('en', $available)) {
-            $available['en'] = array('path' => 'en_AU');
+        if (!array_key_exists('fa', $available)) {
+            $available['fa'] = array('path' => 'fa_IR');
         }
         
         // Build fallback dictionaries
