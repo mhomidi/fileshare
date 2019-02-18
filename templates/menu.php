@@ -16,7 +16,7 @@ $pagemenuitem = function($page) {
             if(!Auth::isGuest()) {
                 $pagemenuitem('upload');
                 
-                $pagemenuitem('guests');
+             //   $pagemenuitem('guests');
                 
                 $pagemenuitem('transfers');
                 
