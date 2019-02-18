@@ -1,5 +1,3 @@
-گواهی این امکان را برای یک نفر فراهم می‌کند که فایل ارسال کند.
-<br />
-برای ساختن یک گواهی، کافیست ایمیل او را وارد کنید
-<br />
-یک ایمیل برای گیرنده ارسال می‌شود که حاوی گواهی دسترسی است.
+A Voucher allows someone to send you a file.<br />
+To create a voucher, enter an email address then select Send Voucher.<br />
+An email will be sent to the recipient with a link to use the Voucher.

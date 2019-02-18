@@ -1,4 +1,4 @@
-<h1>این سرویس در حال توسعه است.</h1>
+<h1>This service is undergoing maintenance</h1>
 <p>
-    لطفا بعدا مراجعه نمایید.
+    Please come back later.
 </p>
