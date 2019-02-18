@@ -124,8 +124,7 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                             <?php } ?>
                         </select>
                         
-                        <?php } else echo Template::sanitizeOutputEmail($emails[0])
-
+                        <?php } else echo Template::sanitizeOutputEmail($emails[0]);
                                 echo Auth::user()->name;
                         ?>
                     </div>
