@@ -130,7 +130,7 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                     <div class="fieldcontainer">
                         <p>
                             <?php
-                                 $s = Auth::user()->lang;
+                                 $s = Auth::user()->created;
                                  echo $s;
 //                                 if ($s){
 //                                     $s1 = json_decode($s);
