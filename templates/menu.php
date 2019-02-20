@@ -46,7 +46,7 @@ $pagemenuitem = function($page) {
 
             $pagemenuitem('help');
             $pagemenuitem('about');
-            $pagemenuitem('privacy');
+//            $pagemenuitem('privacy');
 
             if (Auth::isAuthenticated() && Auth::isSP()) {
                 $url = AuthSP::logoffURL();
@@ -59,6 +59,7 @@ $pagemenuitem = function($page) {
                     echo '<li><a href="'.Utilities::sanitizeOutput(AuthSP::logonURL()).'" id="topmenu_logon">'.Lang::tr('logon').'</a></li>';
                 }
             }
+
         ?>
         </ul>
     </div>
