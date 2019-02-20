@@ -1,13 +1,12 @@
-<h1>Welcome to {cfg:site_name}</h1>
+<h1>به {cfg:site_name} خوش آمدید</h1>
 
 <p>
- {cfg:site_name} is a secure way to share large files with anyone !
+    {cfg:site_name} یک راه امن برای اشتراک گذاری فایل‌های بزرگ است.
 </p>
 <p>
-  Login to upload your files or invite people to send you a file.
+    وارد شوید تا بتوانید فایل‌ بارگذاری کنید یا دیگران را به ارسال فایل دعوت کنید
 </p>
 <p>
-  If you have received an invitation to access this site as a guest
-  then the email will contain the information you will need to access
-  this site and upload files.
+
+    اگر شما دعوتنامه‌ای برای دسترسی به این سایت به عنوان مهمان دریافت کرده اید، شما می‌توانید به عنوان مهمان به ارسال و بارگذاری فایل بپردازید.
 </p>

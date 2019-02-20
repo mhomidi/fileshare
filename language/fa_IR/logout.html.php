@@ -1,3 +1,3 @@
 <p>
-    Logout complete, thanks for using {cfg:site_name}.
+    خروج شما با موفقیت انجام شد.{cfg:site_name}
 </p>
