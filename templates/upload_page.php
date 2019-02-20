@@ -124,7 +124,24 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                             <?php } ?>
                         </select>
                         
-                        <?php } else echo Template::sanitizeOutputEmail($emails[0]) ?>
+                        <?php } else echo Template::sanitizeOutputEmail($emails[0]);
+                        ?>
+                    </div>
+                    <div class="fieldcontainer">
+                        <p>
+                            <?php
+                                 $s = Auth::user()->lang;
+                                 echo $s;
+//                                 if ($s){
+//                                     $s1 = json_decode($s);
+//                                     foreach ( s1 as $key => $value) {
+//                                         echo $key . '=' . $value."<br>";
+//                                     }
+//                                 }
+
+                            ?>
+                        </p>
+                    </div>
                     <?php if($allow_recipients) { ?>
                     <div class="fieldcontainer" data-related-to="message">
                         <label for="to" class="mandatory">{tr:to} :</label>
