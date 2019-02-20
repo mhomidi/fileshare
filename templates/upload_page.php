@@ -128,19 +128,19 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                         ?>
                     </div>
                     <div class="fieldcontainer">
-                        <p>
-                            <?php
-                                 $s = Auth::user()->created;
-                                 echo $s;
-//                                 if ($s){
-//                                     $s1 = json_decode($s);
-//                                     foreach ( s1 as $key => $value) {
-//                                         echo $key . '=' . $value."<br>";
-//                                     }
-//                                 }
-
-                            ?>
-                        </p>
+<!--                        <p>-->
+<!--                            --><?php
+//                                 $s = Auth::user()->created;
+////                                 echo $s;
+////                                 if ($s){
+////                                     $s1 = json_decode($s);
+////                                     foreach ( s1 as $key => $value) {
+////                                         echo $key . '=' . $value."<br>";
+////                                     }
+////                                 }
+//
+//                            ?>
+<!--                        </p>-->
                     </div>
                     <?php if($allow_recipients) { ?>
                     <div class="fieldcontainer" data-related-to="message">
