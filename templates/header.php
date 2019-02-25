@@ -23,7 +23,7 @@
     <body data-security-token="<?php echo Utilities::getSecurityToken() ?>" data-auth-type="<?php echo Auth::type() ?>"
     style="
     <?php
-    if ($_GET['lang'] && $_GET['lang']=='fa') {
+    if ($_GET['lang'] == null || $_GET['lang']=='fa') {
         ?>
             text-align: right; direction: rtl
         <?php
