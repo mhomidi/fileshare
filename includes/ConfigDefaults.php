@@ -37,7 +37,7 @@ $default = array(
     'debug'   => false,   // TODO
     'default_timezone' => 'Europe/London', // Default timezone to use
     'default_language' => 'fa', // Default language to user
-    'lang_browser_enabled' => true, // Take language from user's browser's accept-language header if provided
+    'lang_browser_enabled' => false, // Take language from user's browser's accept-language header if provided
     'lang_userpref_enabled' => false, // Take lang from user profile
     'lang_url_enabled' => true, // Allow URL language switching (?lang=en for example)
     'lang_selector_enabled' => true, // Display language selector (requires lang_url_enabled = true)
