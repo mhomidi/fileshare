@@ -36,7 +36,7 @@ $pagemenuitem = function($page) {
             if(Config::get('lang_selector_enabled') && (count(Lang::getAvailableLanguages()) > 1)) {
                 $opts = array();
                 $code = Lang::getCode();
-                foreach(Lang::getAvailableLanguages() as $id => $dfn) {
+                foreach(Lang:getAvailableLanguages() as $id => $dfn) {
                     $selected = ($id == $code) ? 'selected="selected"' : '';
                     $opts[] = '<option value="'.$id.'" '.$selected.'>'.Utilities::sanitizeOutput($dfn['name']).'</option>';
                 }
