@@ -55,7 +55,7 @@
 
 <h3>ویژگی‌های مرورگر شما</h3>
 <ul class="fa-ul">
-    <li data-feature="html5"><img src="images/html5_installed.png" alt="HTML5 upload enabled" /> شما می‌توانید هر فایلی‌ را با سایز ک.چکتر از {size:cfg:max_transfer_size} در هر انتقال بارگذاری کنید.</li>
+    <li data-feature="html5"><img src="images/html5_installed.png" alt="HTML5 upload enabled" /> شما می‌توانید هر فایلی‌ را با سایز کوچکتر از {size:cfg:max_transfer_size} در هر انتقال بارگذاری کنید.</li>
     <li data-feature="nohtml5"><img src="images/html5_none.png" alt="HTML5 upload disabled" /> شما می‌توانید فایل‌ها را که حداکثر {size:cfg:max_legacy_file_size} و در مجموع {size:cfg:max_transfer_size} را در هر انتقال استفاده کنید.</li>
 </ul>
 
