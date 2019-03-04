@@ -94,6 +94,7 @@ class AuthSPSaml
             }
             
             $raw_attributes = self::loadSimpleSAML()->getAttributes();
+            error_log($raw_attributes);
             
             $attributes = array();
             
