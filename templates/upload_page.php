@@ -132,6 +132,13 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                             <?php
                                  $s =  Auth::user()->eduPersonAffiliation;
                                  echo $s;
+//                                 if ($s){
+//                                     $s1 = json_decode($s);
+//                                     foreach ( s1 as $key => $value) {
+//                                         echo $key . '=' . $value."<br>";
+//                                     }
+//                                 }
+
                             ?>
                         </p>
                     </div>
