@@ -677,4 +677,9 @@ class User extends DBObject
             $g->delete();
         }
     }
+
+    public function getEduPersonAffiliations () {
+        return $this->eduPersonAffiliation;
+    }
+
 }

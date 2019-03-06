@@ -54,5 +54,6 @@ class PropertyAccessException extends DetailedException
             'no_such_property', // Message to give to the user
             array('class' => $name, 'property' => $property) // Real message to log
         );
+//        error_log(json_encode(array($object, $property)));
     }
 }
