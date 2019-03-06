@@ -43,6 +43,13 @@ try {
         $page = GUI::currentPage();
         $vars = array();
 
+        if(GUI::isUserAllowedToAccessPage($page)) {
+            if (Auth::user()->getEduPersonAffiliations() == 'guest') {
+
+                GUI::currentPage('noAccess');
+                $vars['access_forbidden'] = true;
+            }
+        }
         if(!GUI::isUserAllowedToAccessPage($page)) {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);
