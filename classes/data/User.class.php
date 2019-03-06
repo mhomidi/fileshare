@@ -154,6 +154,7 @@ class User extends DBObject
      */
     private $email_addresses = array();
     private $name = null;
+    private $eduPersonAffiliation = null;
     
     /**
      * Misc
@@ -219,6 +220,9 @@ class User extends DBObject
         }
         if (array_key_exists('name', $attributes)) {
             $user->name = $attributes['name'];
+        }
+        if (array_key_exists('eduPersonAffiliation', $attributes)) {
+            $user->eduPersonAffiliation = $attributes['eduPersonAffiliation'];
         }
         
         return $user;
@@ -641,6 +645,8 @@ class User extends DBObject
             $this->email_addresses = $value;
         } elseif ($property == 'name') {
             $this->name = (string)$value;
+        } elseif ($property == 'eduPersonAffiliation') {
+            $this->eduPersonAffiliation = (string)$value;
         } elseif ($property == 'quota') {
             $this->quota = (int)$value;
         } else {

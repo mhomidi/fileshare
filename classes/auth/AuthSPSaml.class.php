@@ -94,13 +94,15 @@ class AuthSPSaml
             }
             
             $raw_attributes = self::loadSimpleSAML()->getAttributes();
-            error_log($raw_attributes);
-            
+            error_log(json_encode($raw_attributes));
             $attributes = array();
-            
+
             // Wanted attributes
-            foreach (array('uid', 'name', 'email') as $attr) {
+            foreach (array('uid', 'name', 'email', 'eduPersonAffiliation') as $attr) {
                 // Keys in raw_attributes (can be array of key)
+//                foreach (self::$config[$attr.'_attribute'] as $k) {
+//                    error_log($k);
+//                }
                 $keys = self::$config[$attr.'_attribute'];
                 if (!is_array($keys)) {
                     $keys = array($keys);
@@ -130,6 +132,9 @@ class AuthSPSaml
             if (is_array($attributes['name'])) {
                 $attributes['name'] = array_shift($attributes['name']);
             }
+            if (is_array($attributes['eduPersonAffiliation'])) {
+                $attributes['eduPersonAffiliation'] = array_shift($attributes['eduPersonAffiliation']);
+            }
             
             if (!$attributes['uid']) {
                 throw new AuthSPMissingAttributeException(
@@ -154,9 +159,13 @@ class AuthSPSaml
                     throw new AuthSPBadAttributeException('email');
                 }
             }
-            
+
             if (!$attributes['name']) {
                 $attributes['name'] = substr($attributes['email'][0], 0, strpos($attributes['email'][0], '@'));
+            }
+
+            if (!$attributes['eduPersonAffiliation']) {
+                $attributes['eduPersonAffiliation'] = substr($attributes['email'][0], 0, strpos($attributes['email'][0], '@'));
             }
             
             // Gather additional attributes if required
