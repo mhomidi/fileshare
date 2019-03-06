@@ -130,15 +130,9 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                     <div class="fieldcontainer">
                         <p>
                             <?php
-                                 $s =  Auth::user()->eduPersonAffiliation;
-                                 echo $s;
-//                                 if ($s){
-//                                     $s1 = json_decode($s);
-//                                     foreach ( s1 as $key => $value) {
-//                                         echo $key . '=' . $value."<br>";
-//                                     }
-//                                 }
-
+                                 $s = Auth::user()->eduPersonAffiliation;
+                                 if ($s)
+                                    echo "salam";
                             ?>
                         </p>
                     </div>

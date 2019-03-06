@@ -110,10 +110,12 @@ class Auth
                     self::$type = 'localprocess';
                 } elseif (AuthGuest::isAuthenticated()) { // Guest
                     self::$attributes = AuthGuest::attributes();
+                    error_log("Guest\n");
                     self::$type = 'guest';
                 } elseif (AuthLocal::isAuthenticated()) { // Local (script)
                     self::$attributes = AuthLocal::attributes();
                     self::$type = 'local';
+                    error_log("local\n");
                 } elseif ((Config::get('auth_remote_application_enabled') || Config::get('auth_remote_user_enabled')) && AuthRemote::isAuthenticated()) { // Remote application/user
                     if (
                         (AuthRemote::application() && Config::get('auth_remote_application_enabled')) ||
@@ -125,9 +127,11 @@ class Auth
                         }
                         self::$type = 'remote';
                     }
+                    error_log("remote\n");
                 } elseif (AuthSP::isAuthenticated()) { // SP
                     self::$attributes = AuthSP::attributes();
                     self::$type = 'sp';
+                    error_log("SP\n");
                 }
             } catch (Exception $e) {
                 self::$exception = $e;
