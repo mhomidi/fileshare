@@ -30,6 +30,12 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+
+
+function isNoAccess($page) {
+    return $page != 'logout' && $page != 'about' && $page != 'help';
+}
+
 try {
     require_once('../includes/init.php');
 
@@ -42,15 +48,16 @@ try {
 
         $page = GUI::currentPage();
         $vars = array();
+//        echo $page;
+        if(GUI::isUserAllowedToAccessPage($page) && isNoAccess($page)) {
+            error_log(get_class(Auth::user()));
+            if (Auth::user()->getEduPersonAffiliations() == 'student') {
 
-//        if(GUI::isUserAllowedToAccessPage($page)) {
-//            if (Auth::user()->getEduPersonAffiliations() == 'guest') {
-//
-//                GUI::currentPage('noAccess');
-//                $vars['access_forbidden'] = true;
-//                if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
-//            }
-//        }
+                GUI::currentPage('noAccess');
+                $vars['access_forbidden'] = true;
+                if(Config::get('auth_sp_autotrigger')) AuthSP::trigger();
+            }
+        }
         if(!GUI::isUserAllowedToAccessPage($page)) {
             if(Auth::isAuthenticated())
                 throw new GUIAccessForbiddenException($page);

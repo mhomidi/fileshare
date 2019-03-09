@@ -341,7 +341,7 @@ class GUI
             }
             
             // Always accessible pages
-            foreach (array('download', 'translate_email', 'logout', 'exception', GUIPages::HELP, GUIPages::ABOUT) as $p) {
+            foreach (array('download', 'translate_email', 'noAccess', 'logout', 'exception', GUIPages::HELP, GUIPages::ABOUT) as $p) {
                 self::$allowed_pages[] = $p;
             }
             
