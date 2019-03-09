@@ -33,7 +33,7 @@
 
 
 function isNoAccess($page) {
-    return $page != 'logout' && $page != 'about' && $page != 'help';
+    return $page != 'logout' && $page != 'about' && $page != 'help' && $page != 'download';
 }
 
 try {

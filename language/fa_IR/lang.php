@@ -474,7 +474,7 @@ $lang['privacy_page_auditlog_lifetime'] = 'تعداد روزهایی که لاگ
 
 $lang['delete_my_account'] = 'پاک کردن حساب من';
 $lang['confirm_delete_my_account'] = 'این کار تمام فایل‌ها، مهمان‌ها و سایر اطلاعات شما را از FileSender پاک می‌کند. ادامه‌ می‌دهید؟';
-$lang['user_deleted'] = 'شما زا سرور حذف شدید. موفق باشید';
+$lang['user_deleted'] = 'شما از سرور حذف شدید. موفق باشید';
 
 $lang['user_preferences_body'] = 'برخی ویژگی‌ها برای حساب شما که شاید بخواهید عوضشان کنید';
 $lang['user_remote_authentication_body'] = 'اگر شما توسعه‌دهنده‌ی REST هستید، از این اطلاعات برای احراز با سیستم استفاده کنید';
