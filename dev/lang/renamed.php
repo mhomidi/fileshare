@@ -63,6 +63,7 @@ $renamed = array(
     
     '_HELP_TEXT' => 'help_text.html.php',
     '_ABOUT_TEXT' => 'about_text.html.php',
-    
+//    '_NOACCESS_TEXT' => 'noAccess_text.html.php',
+
     '_AUPTERMS' => 'aupterms.html.php',
 );

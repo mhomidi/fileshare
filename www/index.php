@@ -48,9 +48,7 @@ try {
 
         $page = GUI::currentPage();
         $vars = array();
-//        echo $page;
-        if(GUI::isUserAllowedToAccessPage($page) && isNoAccess($page)) {
-            error_log(get_class(Auth::user()));
+        if(GUI::isUserAllowedToAccessPage($page) && Auth::isAuthenticated() && isNoAccess($page)) {
             if (Auth::user()->getEduPersonAffiliations() == 'student') {
 
                 GUI::currentPage('noAccess');

@@ -12,8 +12,7 @@ $pagemenuitem = function($page) {
     <div class="leftmenu">
         <ul>
             <?php
-            
-            if(!Auth::isGuest()) {
+            if(!Auth::isGuest() && Auth::isAuthenticated() && Auth::user()->getEduPersonAffiliations() != 'student') {
                 $pagemenuitem('upload');
                 
              //   $pagemenuitem('guests');

@@ -239,8 +239,9 @@ Upgrader::register('post', function() use($uid) {
         
         '_SITE_SPLASHHEAD' => 'site_splash.html.php@1',
         '_SITE_SPLASHTEXT' => 'site_splash.html.php@2',
-        
+
         '_HELP_TEXT' => 'help_text.html.php',
+//        '_NOACCESS_TEXT' => 'noAccess_text.html.php',
         '_ABOUT_TEXT' => 'about_text.html.php',
         '_AUPTERMS' => 'aupterms.html.php',
     );
