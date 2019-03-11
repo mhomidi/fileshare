@@ -16,7 +16,6 @@
         'pagerprefix' => 'open',
         'header' => '{tr:available_transfers}'
     ));
-    error_log(json_encode(Transfer::fromUser(Auth::user(), false, $openlimit+1, $openoffset)));
     ?>
     
     <?php if(Config::get('auditlog_lifetime') > 0) { ?>
