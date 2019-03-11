@@ -316,7 +316,7 @@ window.filesender.transfer = function() {
             node: source_node,
             transfer: this
         };
-        
+
         // Look for dup
         for (var i = 0; i < this.files.length; i++) {
             if (this.files[i].name == file.name && this.files[i].size == file.size) {
@@ -324,7 +324,19 @@ window.filesender.transfer = function() {
                 return false;
             }
         }
-        
+
+        var sizeOfFiles = 0;
+        for (var i = 0; i < this.files.length; i++) {
+            sizeOfFiles += this.files[i].size;
+        }
+
+        var maxAllUploud = document.getElementById('max_all_uploading_size').value;
+        maxAllUploud = parseInt(maxAllUploud, 10);
+        alert("salam1");
+        if (sizeOfFiles > maxAllUploud) {
+
+        }
+
         if (this.files.length >= filesender.config.max_transfer_files) {
             errorhandler({message: 'transfer_too_many_files', details: {max: filesender.config.max_transfer_files}});
             return false;
