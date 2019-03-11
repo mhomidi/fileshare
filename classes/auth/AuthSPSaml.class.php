@@ -167,9 +167,6 @@ class AuthSPSaml
                 $attributes['name'] = substr($attributes['email'][0], 0, strpos($attributes['email'][0], '@'));
             }
 
-            if ($attributes['eduPersonAffiliation']) {
-                error_log($attributes['eduPersonAffiliation']);
-            }
 
 
             // Gather additional attributes if required

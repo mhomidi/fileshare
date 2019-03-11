@@ -5,13 +5,12 @@ function getMaxAvalableTransferUpload() {
     $openoffset   = Utilities::arrayKeyOrDefault( $_GET, 'openoffset',    0, FILTER_VALIDATE_INT  );
     $openlimit    = Utilities::arrayKeyOrDefault( $_GET, 'openlimit',    10, FILTER_VALIDATE_INT  );
     $sum = 0;
-    $transfers = Transfer::fromUser(Auth::user(), false, $openlimit+1, $openoffset );
+    $transfers = Transfer::fromUser(Auth::user(), false, $openlimit + 1, $openoffset);
 
-    $transfers = array_slice($transfers,0,$openlimit);
     error_log(json_encode($transfers));
-//    foreach ($trasfers as $trasfer) {
-//        $sum += $trasfer->size;
-//    }
+    foreach ($transfers as $transfer) {
+        $sum += $transfer->size;
+    }
 
     $max = Config::get('max_all_transfers_size');
     return $max - $sum;
