@@ -7,7 +7,6 @@ function getMaxAvalableTransferUpload() {
     $sum = 0;
     $transfers = Transfer::fromUser(Auth::user(), false, $openlimit + 1, $openoffset);
 
-    error_log(json_encode($transfers));
     foreach ($transfers as $transfer) {
         $sum += $transfer->size;
     }
