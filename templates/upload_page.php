@@ -1,5 +1,24 @@
 <?php
 
+function getMaxAvalableTransferUpload() {
+
+    $openoffset   = Utilities::arrayKeyOrDefault( $_GET, 'openoffset',    0, FILTER_VALIDATE_INT  );
+    $openlimit    = Utilities::arrayKeyOrDefault( $_GET, 'openlimit',    10, FILTER_VALIDATE_INT  );
+    $sum = 0;
+    $transfers = Transfer::fromUser(Auth::user(), false, $openlimit+1, $openoffset );
+
+    $transfers = array_slice($transfers,0,$openlimit);
+    error_log(json_encode($transfers));
+//    foreach ($trasfers as $trasfer) {
+//        $sum += $trasfer->size;
+//    }
+
+    $max = Config::get('max_all_transfers_size');
+    return $max - $sum;
+}
+
+
+
 $formClasses = "upload_form_regular";
 if (Config::get('upload_display_per_file_stats')) {
    $formClasses = "upload_form_stats";
@@ -314,6 +333,8 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
             </a>
         </div>
     </form>
+
+    <input type="hidden" id="max_all_transfers_size" value="<?php echo getMaxAvalableTransferUpload() ?>">
 
     <?php if (Config::get('upload_graph_bulk_display')) { ?>
         <div id="graph" class="uploadbulkgraph"><div id="graphDiv" style="width:400px; height:200px; margin:0 auto"><canvas id="speedChart"></canvas></div></div>

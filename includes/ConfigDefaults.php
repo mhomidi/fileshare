@@ -75,6 +75,7 @@ $default = array(
     'extension_whitelist_regex' => '^[a-zA-Z0-9]*$', // a valid file extension must match this regex
     
     'max_transfer_size' => 1024*1024*1024,
+    'max_all_transfers_size' => 3*1024*1024,
     'max_transfer_recipients' => 3,
     'max_transfer_files' => 2,
     'max_transfer_days_valid' => 2,

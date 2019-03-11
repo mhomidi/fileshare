@@ -66,8 +66,6 @@ class AuthSP
     public static function attributes()
     {
         $class = self::loadDelegationClass();
-        $test = call_user_func($class.'::attributes');
-        error_log(json_encode($test));
 
         return call_user_func($class.'::attributes');
     }
