@@ -231,9 +231,9 @@ class User extends DBObject
             'employee' => 1024 * 1024 * 1024,
             'guest' => 500 * 1024 * 1024
         );
+        error_log($user->eduPersonAffiliation);
 
         foreach ($arrayOfSizeExist as $key => $val) {
-            error_log($key);
             if (strcmp($user->eduPersonAffiliation, $key))
                 $user->maxSizeCanUpload = $val;
         }
