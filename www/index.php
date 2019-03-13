@@ -49,7 +49,7 @@ try {
         $page = GUI::currentPage();
         $vars = array();
         if(GUI::isUserAllowedToAccessPage($page) && Auth::isAuthenticated() && isNoAccess($page)) {
-            if (Auth::user()->getEduPersonAffiliations() == 'kaka') {
+            if (Auth::user()->getEduPersonAffiliations() == 'guest') {
 
                 GUI::currentPage('noAccess');
                 $vars['access_forbidden'] = true;
