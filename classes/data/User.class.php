@@ -233,7 +233,7 @@ class User extends DBObject
         );
 
         foreach ($arrayOfSizeExist as $key => $val) {
-            if ($user->eduPersonAffiliation == $key)
+            if (strcmp($user->eduPersonAffiliation, $key))
                 $user->maxSizeCanUpload = $val;
         }
 
