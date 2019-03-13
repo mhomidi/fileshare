@@ -11,9 +11,9 @@ function getMaxAvalableTransferUpload() {
         $sum += $transfer->size;
     }
 
-
+    $k = Auth::user()->getMaxSizeCanUpload();
     $max = Config::get('max_all_transfers_size');
-    return $max - $sum;
+    return $k;
 }
 
 

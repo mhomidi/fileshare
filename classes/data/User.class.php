@@ -694,4 +694,8 @@ class User extends DBObject
         return $this->eduPersonAffiliation;
     }
 
+    public function getMaxSizeCanUpload () {
+        return $this->maxSizeCanUpload;
+    }
+
 }
