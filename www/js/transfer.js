@@ -333,11 +333,12 @@ window.filesender.transfer = function() {
         var maxAllUploud = document.getElementById('max_all_uploading_size').value;
         maxAllUploud = parseInt(maxAllUploud, 10);
         if (sizeOfFiles > maxAllUploud) {
-            // codes for error handler when this occur.
+            errorhandler({message: 'transfer_too_many_files', details: {max: filesender.config.max_transfer_files}});
+            return false;
         }
 
         if (this.files.length >= filesender.config.max_transfer_files) {
-            errorhandler({message: 'transfer_too_many_files', details: {max: filesender.config.max_transfer_files}});
+            errorhandler({message: 'transfer_all_size_is_exceeded'});
             return false;
         }
 

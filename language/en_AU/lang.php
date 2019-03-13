@@ -403,6 +403,7 @@ $lang['transfer_rejected'] = 'Transfer creation rejected';
 $lang['transfer_reminded'] = 'Transfer reminded to recipients';
 $lang['transfer_seems_to_be_stalled'] = 'Upload seems to be stalled (way slower than expected), do you want to try restarting it or stop it ?';
 $lang['transfer_too_many_files'] = 'Maximum number of files exceeded';
+$lang['transfer_all_size_is_exceeded'] = 'این فایل بیش از حجم اختصاص داده شده به شماست.';
 $lang['transfer_too_many_recipients'] = 'Maximum number of recipients exceeded';
 $lang['transfer_upload_stopped'] = 'Transfer upload stopped';
 $lang['transfer_user_quota_exceeded'] = 'User quota exceeded';

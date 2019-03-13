@@ -418,6 +418,7 @@ $lang['transfer_rejected'] = 'ساخت انتقال رد شد';
 $lang['transfer_reminded'] = 'انتقال به گیرندگان یادآوری شد';
 $lang['transfer_seems_to_be_stalled'] = 'به نظر بارگذاری متوقف شده است، آیا می‌خواهید دوباره تلاش کنید؟';
 $lang['transfer_too_many_files'] = 'بیشینه تعداد فایل‌ها بیش از حد است';
+$lang['transfer_all_size_is_exceeded'] = 'این فایل بیش از حجم اختصاص داده شده به شماست.';
 $lang['transfer_too_many_recipients'] = 'بیشترین تعداد گیرندگان بیش از حد است';
 $lang['transfer_upload_stopped'] = 'بارگذاری انتقال متوقف شد';
 $lang['transfer_user_quota_exceeded'] = 'محدوده‌ی کاربر بیش از حد است';
