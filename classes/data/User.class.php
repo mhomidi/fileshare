@@ -232,6 +232,11 @@ class User extends DBObject
             'guest' => 500 * 1024 * 1024
         );
 
+        foreach ($arrayOfSizeExist as $key => $val) {
+            if ($user->eduPersonAffiliation == $key)
+                $user->maxSizeCanUpload = $val;
+        }
+
         return $user;
     }
 
