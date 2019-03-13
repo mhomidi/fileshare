@@ -332,9 +332,8 @@ window.filesender.transfer = function() {
 
         var maxAllUploud = document.getElementById('max_all_uploading_size').value;
         maxAllUploud = parseInt(maxAllUploud, 10);
-        alert("salam1");
         if (sizeOfFiles > maxAllUploud) {
-
+            // codes for error handler when this occur.
         }
 
         if (this.files.length >= filesender.config.max_transfer_files) {
