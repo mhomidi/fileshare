@@ -480,3 +480,8 @@ $lang['user_deleted'] = 'شما از سرور حذف شدید. موفق باشی
 $lang['user_preferences_body'] = 'برخی ویژگی‌ها برای حساب شما که شاید بخواهید عوضشان کنید';
 $lang['user_remote_authentication_body'] = 'اگر شما توسعه‌دهنده‌ی REST هستید، از این اطلاعات برای احراز با سیستم استفاده کنید';
 $lang['user_additional_body'] = 'این اطلاعاتی است ما درباره‌ی حساب شما داریم.';
+
+
+$lang['student'] = 'دانش آموز';
+$lang['teacher'] = 'استاد';
+$lang['guest'] = 'مهمان';
