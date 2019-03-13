@@ -85,8 +85,8 @@
 
 <h3>Limitations  for users</h3>
 <ul class="fa-ul">
-    <li><i class="fa-li fa fa-caret-right"></i><strong>Teacher</strong>{cfg:teacher}</li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>Student</strong>{cfg:student}</li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>Teacher: </strong>1 GB</li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>Student: </strong>500 MB</li>
 </ul>
 
 

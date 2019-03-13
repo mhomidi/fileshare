@@ -29,7 +29,6 @@ if(Auth::isGuest()) {
         if(!$guest->last_activity || $guest->last_activity < strtotime('-1 hour')) {
             // Send mail to guest the owner of the voucher
             ApplicationMail::quickSend('guest_access_upload_page', $guest->owner, $guest);
-            
             $guest->last_activity = time();
             $guest->save();
         }

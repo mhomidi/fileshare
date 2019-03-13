@@ -80,8 +80,8 @@
 
 <h3>محمدودیت‌های حجمی</h3>
 <ul class="fa-ul">
-    <li><strong>استاد</strong>{cfg:teacher}</li>
-    <li><strong>دانش‌آموز</strong>{cfg:student}</li>
+    <li><strong>استاد: </strong>1 GB</li>
+    <li><strong>دانش‌آموز: </strong>500 MB</li>
 </ul>
 
 <h3>مشخصات سرویس</h3>
