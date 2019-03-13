@@ -155,6 +155,7 @@ class User extends DBObject
     private $email_addresses = array();
     private $name = null;
     private $eduPersonAffiliation = null;
+    private $maxSizeCanUpload = 0;
 
     /**
      * Misc
@@ -224,6 +225,12 @@ class User extends DBObject
         if (array_key_exists('eduPersonAffiliation', $attributes)) {
             $user->eduPersonAffiliation = $attributes['eduPersonAffiliation'];
         }
+
+        $arrayOfSizeExist = array(
+            'student' => 300 * 1024 * 1024,
+            'employee' => 1024 * 1024 * 1024,
+            'guest' => 500 * 1024 * 1024
+        );
 
         return $user;
     }

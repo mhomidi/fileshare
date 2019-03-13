@@ -11,6 +11,7 @@ function getMaxAvalableTransferUpload() {
         $sum += $transfer->size;
     }
 
+
     $max = Config::get('max_all_transfers_size');
     return $max - $sum;
 }
