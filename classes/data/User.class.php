@@ -227,9 +227,9 @@ class User extends DBObject
         }
 
         $arrayOfSizeExist = array(
-            'student' => 300 * 1024 * 1024,
-            'employee' => 1024 * 1024 * 1024,
-            'guest' => 500 * 1024 * 1024
+            'student' => Config::get('student'),
+            'employee' => Config::get('teacher'),
+            'guest' => Config::get('guest')
         );
 
         foreach ($arrayOfSizeExist as $key => $val) {

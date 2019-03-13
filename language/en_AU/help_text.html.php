@@ -83,12 +83,17 @@
     <li><i class="fa-li fa fa-caret-right"></i>Resuming uploads is not supported with this method.</li>
 </ul>
 
+<h3>Limitations  for users</h3>
+<ul class="fa-ul">
+    <li><i class="fa-li fa fa-caret-right"></i><strong>Teacher</strong>{cfg:teacher}</li>
+    <li><i class="fa-li fa fa-caret-right"></i><strong>Student</strong>{cfg:student}</li>
+</ul>
+
+
 <h3>Configured service constraints</h3>
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-caret-right"></i><strong>Maximum number of recipients : </strong>{cfg:max_transfer_recipients} email addresses separated by a comma or semi-colon</li>
     <li><i class="fa-li fa fa-caret-right"></i><strong>Maximum number of files per transfer : </strong>{cfg:max_transfer_files}</li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>Maximum size per transfer : </strong>{size:cfg:max_transfer_size}</li>
-    <li><i class="fa-li fa fa-caret-right"></i><strong>Maximum file size per file for non-HTML5 browsers : </strong>{size:cfg:max_legacy_file_size}</li>
     <li><i class="fa-li fa fa-caret-right"></i><strong>Transfer expiry days : </strong>{cfg:default_transfer_days_valid} (max. {cfg:max_transfer_days_valid})</li>
     <li><i class="fa-li fa fa-caret-right"></i><strong>Guest expiry days : </strong>{cfg:default_guest_days_valid} (max. {cfg:max_guest_days_valid})</li>
 </ul>

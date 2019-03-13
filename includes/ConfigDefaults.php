@@ -73,7 +73,11 @@ $default = array(
     'mac_unzip_link' => 'https://theunarchiver.com/',
     'ban_extension' => 'exe,bat',
     'extension_whitelist_regex' => '^[a-zA-Z0-9]*$', // a valid file extension must match this regex
-    
+
+    'teacher' => 1024*1024*1024,
+    'student' => 300*1024*1024,
+    'guest' => 500*1024*1024,
+
     'max_transfer_size' => 1024*1024*1024,
     'max_all_transfers_size' => 1*1024*1024,
     'max_transfer_recipients' => 3,
