@@ -78,12 +78,16 @@
     <li>دوباره بارگذاری کردن در این روش امکان‌پذیر نیست.</li>
 </ul>
 
+<h3>محمدودیت‌های حجمی</h3>
+<ul class="fa-ul">
+    <li><strong>استاد</strong>{cfg:teacher}</li>
+    <li><strong>دانش‌آموز</strong>{cfg:student}</li>
+</ul>
+
 <h3>مشخصات سرویس</h3>
 <ul class="fa-ul">
     <li><strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. </li>
     <li><strong>بیشینه تعداد فایل در هر انتقال:‌ </strong>{cfg:max_transfer_files}</li>
-    <li><strong>بیشنیه سایز در هر انتقال: </strong>{size:cfg:max_transfer_size}</li>
-    <li><strong>یبشینه سایز فایل در حالت بدون <img src="images/html5_installed.png" alt="HTML5 upload disabled" /> : </strong>{size:cfg:max_legacy_file_size}</li>
     <li><strong>تعداد روز انقضای انتقال: </strong>{cfg:default_transfer_days_valid} (نهایت: {cfg:max_transfer_days_valid})</li>
     <li><strong>انقضای گواهی مهمان به روز:‌ </strong>{cfg:default_guest_days_valid} (نهایت: {cfg:max_guest_days_valid})</li>
 </ul>
