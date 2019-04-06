@@ -329,10 +329,12 @@ window.filesender.transfer = function() {
         for (var i = 0; i < this.files.length; i++) {
             sizeOfFiles += this.files[i].size;
         }
+        sizeOfFiles += file.size;
 
         var maxAllUploud = document.getElementById('max_all_uploading_size').value;
         maxAllUploud = parseInt(maxAllUploud, 10);
         if (sizeOfFiles > maxAllUploud) {
+            alert('saalma3');
             errorhandler({message: 'transfer_too_many_files', details: {max: filesender.config.max_transfer_files}});
             return false;
         }
