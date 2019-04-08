@@ -468,7 +468,11 @@ class RestEndpointTransfer extends RestEndpoint
                 throw new TransferMaximumSizeExceededException($size, $maxsize);
             }
 
+            $maxsize = Auth::user()->getMaxAvalableTransferUpload();
 
+            if ($size > $maxsize) {
+                throw new TransferMaximumAvailableSizeExceededException($size, $maxsize);
+            }
 
             // ... check that each file is under the per file size limit
             foreach ($data->files as $filedata) {

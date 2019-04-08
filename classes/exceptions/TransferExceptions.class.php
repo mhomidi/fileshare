@@ -181,7 +181,7 @@ class TransferMaximumSizeExceededException extends DetailedException
      */
     public function __construct($size, $max)
     {
-        parent::__construct('transfer_maximum_size_exceeded', 'size='.$wanted.' max='.$max);
+        parent::__construct('transfer_maximum_size_exceeded', 'size='.$size.' max='.$max);
     }
 }
 
@@ -198,7 +198,7 @@ class TransferMaximumFileSizeExceededException extends DetailedException
      */
     public function __construct($size, $max)
     {
-        parent::__construct('transfer_maximum_file_size_exceeded', 'size='.$wanted.' max='.$max);
+        parent::__construct('transfer_maximum_file_size_exceeded', 'size='.$size.' max='.$max);
     }
 }
 
@@ -215,7 +215,7 @@ class TransferMaximumEncryptedFileSizeExceededException extends DetailedExceptio
      */
     public function __construct($size, $max)
     {
-        parent::__construct('transfer_maximum_encrypted_file_size_exceeded', 'size='.$wanted.' max='.$max);
+        parent::__construct('transfer_maximum_encrypted_file_size_exceeded', 'size='.$size.' max='.$max);
     }
 }
 
@@ -378,5 +378,22 @@ class TransferExpiryExtensionCountExceededException extends TransferException
     public function __construct($transfer)
     {
         parent::__construct($transfer, 'expiry_extension_count_exceeded');
+    }
+}
+
+/**
+ * Maximum size exeeded exception
+ */
+class TransferMaximumAvailableSizeExceededException extends DetailedException
+{
+    /**
+     * Constructor
+     *
+     * @param int $size
+     * @param int $max
+     */
+    public function __construct($size, $max)
+    {
+        parent::__construct('transfer_maximum_size_exceeded', 'size='.$size.' max='.$max);
     }
 }
