@@ -42,7 +42,7 @@ $default = array(
     'lang_url_enabled' => true, // Allow URL language switching (?lang=en for example)
     'lang_selector_enabled' => true, // Display language selector (requires lang_url_enabled = true)
     'lang_save_url_switch_in_userpref' => false, // Save lang switching in user preferences (requires lang_url_enabled = true and lang_userpref_enabled = true)
-    'site_name' => 'سامانه ابری دانشگاه تهران', // Default site name to user
+    'site_name' => 'سامانه ارسال فایل دانشگاه تهران', // Default site name to user
     'email_use_html' => true,   // By default, use HTML on mails
     'relay_unknown_feedbacks' => 'sender',   // Report email feedbacks with unknown type but with identified target (recipient or guest) to target owner
     'upload_display_bits_per_sec' => false, // By default, do not show bits per seconds 

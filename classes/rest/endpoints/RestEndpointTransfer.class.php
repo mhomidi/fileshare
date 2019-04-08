@@ -468,6 +468,8 @@ class RestEndpointTransfer extends RestEndpoint
                 throw new TransferMaximumSizeExceededException($size, $maxsize);
             }
 
+
+
             // ... check that each file is under the per file size limit
             foreach ($data->files as $filedata) {
                 $sz = $filedata->size;
