@@ -96,6 +96,8 @@ class AuthSPSaml
             $raw_attributes = self::loadSimpleSAML()->getAttributes();
             $attributes = array();
 
+            error_log(json_encode($raw_attributes));
+
             // Wanted attributes
             foreach (array('uid', 'name', 'email') as $attr) {
                 // Keys in raw_attributes (can be array of key)
