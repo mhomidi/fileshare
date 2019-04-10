@@ -1,7 +1,7 @@
 <h1>Welcome to {cfg:site_name}</h1>
 <p>
     {cfg:site_name} is an installation of 
-    the FileSender project (<a rel="nofollow" href="http://www.filesender.org/" target="_blank">www.filesender.org</a>)
+    the FileSender of UT project (<a rel="nofollow" href="http://www.filesender.org/" target="_blank">www.filesender.org</a>)
     which is a web based application that allows authenticated users to
     securely and easily send arbitrarily large files to other users.
 </p>
@@ -10,7 +10,7 @@
     SimpleSAMLphp</a>,
     supporting SAML2, LDAP and RADIUS and more. Users without an
     account can be sent an upload voucher by an authenticated user.
-    FileSender is developed to the requirements of the higher
+    FileSender of UT is developed to the requirements of the higher
     education and research community.
 </p>
 <p>

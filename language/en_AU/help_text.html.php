@@ -1,10 +1,10 @@
-<h3>Welcome to FileSender</h3>
+<h3>Welcome to FileSender of UT</h3>
 
 <p>
-    FileSender is a web based application that allows authenticated
+    FileSender of UT is a web based application that allows authenticated
     users to securely and easily send arbitrarily large files to other
     users. Users without an account can be sent a guest upload voucher by an
-    authenticated user. FileSender is developed to the requirements of
+    authenticated user. FileSender of UT is developed to the requirements of
     the higher education and research community.
 </p>
 
@@ -15,7 +15,7 @@
     invited to upload files one or more times. The simplest way to do
     that is using the information contained in the invitation email.
     When uploading as guest, be sure to verify that any links in the
-    guest invitation email are to a FileSender that is running on a
+    guest invitation email are to a FileSender of UT that is running on a
     research facility you trust. If you are not expecting a guest link
     from a facility you know then the email might not be legitimate.
 </p>
@@ -30,16 +30,16 @@
 <h4>For authenticated users...</h4>
 
 <p>
-    If this installation of FileSender is on your research facility
+    If this installation of FileSender of UT is on your research facility
     the login button on the top right of the page should let you login
     using standard institutional account. If you are unsure
-    about what login credentials to use to access this FileSender then
+    about what login credentials to use to access this FileSender of UT then
     please contact your local IT support.
 </p>
 
 <p>
     As an authenticated user you should be able to upload files one or
-    more times and either have FileSender email the recipients after
+    more times and either have FileSender of UT email the recipients after
     your upload completes or provide you with a link to allow file
     download. You should also be able to invite other researchers to
     the system to upload one or more files as a guest. 
@@ -79,7 +79,7 @@
 
 <h3>Uploads up to {size:cfg:max_legacy_file_size} per file without HTML5</h3>
 <ul class="fa-ul">
-    <li><i class="fa-li fa fa-caret-right"></i>FileSender will warn you should you try to upload a file that is too big for this method.</li>
+    <li><i class="fa-li fa fa-caret-right"></i>FileSender of UT will warn you should you try to upload a file that is too big for this method.</li>
     <li><i class="fa-li fa fa-caret-right"></i>Resuming uploads is not supported with this method.</li>
 </ul>
 
@@ -101,13 +101,13 @@
 <h3>Technical details</h3>
 <ul class="fa-ul">
     <li><i class="fa-li fa fa-caret-right"></i>
-        <strong>{cfg:site_name}</strong> uses the <a href="http://www.filesender.org/" target="_blank">FileSender software</a>.
-        FileSender indicates whether or not the HTML5 upload method is supported for a particular browser.
+        <strong>{cfg:site_name}</strong> uses the <a href="http://www.FileSender of UT.org/" target="_blank">FileSender of UT software</a>.
+        FileSender of UT indicates whether or not the HTML5 upload method is supported for a particular browser.
         This depends mainly on the availability of advanced browser functionality, in particular the HTML5 FileAPI.
         Please use the <a href="http://caniuse.com/fileapi" target="_blank">"When can I use..."</a> website to monitor implementation progress of the HTML5 FileAPI for all major browsers.
         In particular support for <a href="http://caniuse.com/filereader" target="_blank">FileReader API</a> and <a href="http://caniuse.com/bloburls" target="_blank">Blob URLs</a> needs to be light green (=supported) for a browser to support uploads larger than {size:cfg:max_legacy_file_size}.
-        Please note that although Opera 12 is listed to support the HTML5 FileAPI, it currently does not support all that is needed to support use of the HTML5 upload method in FileSender.
+        Please note that although Opera 12 is listed to support the HTML5 FileAPI, it currently does not support all that is needed to support use of the HTML5 upload method in FileSender of UT.
     </li>
 </ul>
 
-<p>For more information please visit <a href="http://www.filesender.org/" target="_blank">www.filesender.org</a></p>
+<p>For more information please visit <a href="http://www.FileSender of UT.org/" target="_blank">www.FileSender of UT.org</a></p>
