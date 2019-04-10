@@ -23,6 +23,10 @@
     <body data-security-token="<?php echo Utilities::getSecurityToken() ?>" data-auth-type="<?php echo Auth::type() ?>"
     style="
     <?php
+    $rtl = false;
+    foreach(Lang::getAvailableLanguages() as $id => $language) {
+        $rtl = ($id == $info['value']) ? true : false;
+    }
     if ($_GET['lang'] == null || $_GET['lang']=='fa') {
         ?>
             text-align: right; direction: rtl
