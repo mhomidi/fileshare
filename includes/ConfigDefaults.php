@@ -132,8 +132,7 @@ $default = array(
     'email_from' => 'mh.omidi@ut.ac.ir',
     'email_return_path' => 'mh.omidi@ut.ac.ir',
     'email_subject_prefix' => '{cfg:site_name}:',
-    'email_reply_to' => 'sender'
-    
+
     'report_bounces' => 'asap',
     'report_bounces_asap_then_daily_range' => 15 * 60,
 
