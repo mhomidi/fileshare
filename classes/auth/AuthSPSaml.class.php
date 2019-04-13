@@ -135,8 +135,10 @@ class AuthSPSaml
             }
 
             if (array_key_exists('eduPersonAffiliation', $raw_attributes)) {
-                if (is_array($raw_attributes['eduPersonAffiliation']))
-                    $attributes['eduPersonAffiliation'] = $raw_attributes['eduPersonAffiliation'][0];
+                if (is_array($raw_attributes['eduPersonAffiliation'])) {
+                    $attributes['eduPersonAffiliation'] =
+                        $raw_attributes['eduPersonAffiliation'][sizeof($raw_attributes['eduPersonAffiliation']) - 1];
+                }
                 else if (is_string($raw_attributes['eduPersonAffiliation']))
                     $attributes['eduPersonAffiliation'] = $raw_attributes['eduPersonAffiliation'];
             }

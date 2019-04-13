@@ -76,7 +76,11 @@ $default = array(
 
     'teacher' => 1024*1024*1024,
     'student' => 500*1024*1024,
-    'guest' => 500*1024*1024,
+    'employee' => 300*1024*1024,
+
+    'teacherCode'  => 5,
+    'masterCode'   => 6,
+    'employeeCode'  => 150,
 
     'max_transfer_size' => 1024*1024*1024,
     'max_all_transfers_size' => 1*1024*1024,

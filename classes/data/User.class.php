@@ -156,6 +156,7 @@ class User extends DBObject
     private $name = null;
     private $eduPersonAffiliation = null;
     private $maxSizeCanUpload = 0;
+    private $UTEmployeeTypeCode = 0;
 
     /**
      * Misc
@@ -226,15 +227,20 @@ class User extends DBObject
             $user->eduPersonAffiliation = $attributes['eduPersonAffiliation'];
         }
 
-        $arrayOfSizeExist = array(
-            'student' => Config::get('student'),
-            'employee' => Config::get('teacher'),
-            'guest' => Config::get('guest')
-        );
+        if (array_key_exists('UTEmployeeTypeCode', $attributes)) {
+            $user->UTEmployeeTypeCode =  (int)$attributes['UTEmployeeTypeCode'];
+        }
 
-        foreach ($arrayOfSizeExist as $key => $val) {
-            if (strcmp($user->eduPersonAffiliation, $key) == 0)
-                $user->maxSizeCanUpload = $val;
+        if (strcmp($user->eduPersonAffiliation, 'student') == 0) {
+            $user->maxSizeCanUpload = Config::get('student');
+        }
+        else if (strcmp($user->eduPersonAffiliation, 'employee') == 0) {
+            if ($user->UTEmployeeTypeCode == Config::get('employeeCode'))
+                $user->maxSizeCanUpload = Config::get('employee');
+            else if ($user->UTEmployeeTypeCode == Config::get('teacherCode') ||
+                $user->UTEmployeeTypeCode == Config::get('masterCode')) {
+                $user->maxSizeCanUpload = Config::get('teacher');
+            }
         }
 
         return $user;
