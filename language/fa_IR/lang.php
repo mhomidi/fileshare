@@ -473,7 +473,7 @@ $lang['privacy_page_translatable_emails_lifetime'] = 'تعداد روزهایی 
 $lang['privacy_page_guests_expired_lifetime'] = 'اگر یک مهمانی منقضی شود، تعداد روزهایی که پس از آن از پایگاه داده پاک می‌شود';
 $lang['privacy_page_auditlog_lifetime'] = 'تعداد روزهایی که لاگ برنامه می‌ماند';
 
-$lang['delete_my_account'] = 'پاک کردن حساب من';
+$lang['delete_my_account'] = 'پاک کردن تاریخچه حساب من';
 $lang['confirm_delete_my_account'] = 'این کار تمام فایل‌ها، مهمان‌ها و سایر اطلاعات شما را از FileSender پاک می‌کند. ادامه‌ می‌دهید؟';
 $lang['user_deleted'] = 'شما از سرور حذف شدید. موفق باشید';
 

@@ -49,16 +49,16 @@
 
 <h3>محدودیت‌های حجمی</h3>
 <ul class="fa-ul">
-    <li><strong>هیئت علمی: </strong>۱ گیگابایت</li>
-    <li><strong>دانشجویان: </strong>۵۰۰ مگابایت</li>
-    <li><strong>کارمندان: </strong>۳۰۰ مگابایت</li>
+    <li><i class="fa fa-caret-left icon"></i>&nbsp;&nbsp;<strong>هیئت علمی: </strong>۱ گیگابایت</li>
+    <li><i class="fa fa-caret-left icon"></i>&nbsp;&nbsp;<strong>دانشجویان: </strong>۵۰۰ مگابایت</li>
+    <li><i class="fa fa-caret-left icon"></i>&nbsp;&nbsp;<strong>کارمندان: </strong>۳۰۰ مگابایت</li>
 </ul>
 
 <h3>مشخصات سرویس</h3>
 <ul class="fa-ul">
-    <li><strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. </li>
-    <li><strong>بیشینه تعداد فایل در هر انتقال:‌ </strong>{cfg:max_transfer_files}</li>
-    <li><strong>بیشینه تعداد روز انقضای انتقال پس از بارگذاری: </strong>{cfg:max_transfer_days_valid}</li>
+    <li><i class="fa fa-caret-left icon"></i>&nbsp;&nbsp;<strong>بیشینه تعداد گیرندگان: </strong>{cfg:max_transfer_recipients} ایمیل که با کاما و سمی‌کالن جدا می‌شوند. </li>
+    <li><i class="fa fa-caret-left icon"></i>&nbsp;&nbsp;<strong>بیشینه تعداد فایل در هر انتقال:‌ </strong>{cfg:max_transfer_files}</li>
+    <li><i class="fa fa-caret-left icon"></i>&nbsp;&nbsp;<strong>بیشینه تعداد روز انقضای انتقال پس از بارگذاری: </strong>{cfg:max_transfer_days_valid}</li>
 </ul>
 
 <!--<h3>جزئیات پیشرفته</h3>-->

@@ -7,3 +7,7 @@ body {
     text-align: right;
     direction: rtl;
 }
+
+.icon {
+    margin-left: 10px;
+}

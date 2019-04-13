@@ -23,11 +23,18 @@
     <body data-security-token="<?php echo Utilities::getSecurityToken() ?>" data-auth-type="<?php echo Auth::type() ?>"
     style="
     <?php
-    $rtl = false;
-    foreach(Lang::getAvailableLanguages() as $id => $language) {
-        $rtl = ($id == $info['value']) ? true : false;
+
+    if(Config::get('lang_selector_enabled') && (count(Lang::getAvailableLanguages()) > 1)) {
+        $code = Lang::getCode();
+        $lang = 'en';
+        foreach (Lang::getAvailableLanguages() as $id => $dfn) {
+            if (($id == $code)) {
+                $lang = $id;
+                error_log((string)$code);
+            }
+        }
     }
-    if ($_GET['lang'] == null || $_GET['lang']=='fa') {
+    if (strcmp($lang, 'fa') == 0) {
         ?>
             text-align: right; direction: rtl
         <?php
