@@ -334,8 +334,7 @@ window.filesender.transfer = function() {
         var maxAllUploud = document.getElementById('max_all_uploading_size').value;
         maxAllUploud = parseInt(maxAllUploud, 10);
         if (sizeOfFiles > maxAllUploud) {
-            alert('saalma3');
-            errorhandler({message: 'transfer_too_many_files', details: {max: filesender.config.max_transfer_files}});
+            errorhandler({message: 'maximum_files_size_exceeded', details: {max: filesender.config.max_transfer_size}});
             return false;
         }
 
