@@ -15,7 +15,7 @@ $pagemenuitem = function($page) {
             if(!Auth::isGuest() && Auth::isAuthenticated() && Auth::user()->getEduPersonAffiliations() != 'guest') {
                 $pagemenuitem('upload');
                 
-             //   $pagemenuitem('guests');
+                $pagemenuitem('guests');
                 
                 $pagemenuitem('transfers');
                 

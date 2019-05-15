@@ -154,9 +154,11 @@ $default = array(
     'message_can_not_contain_urls_regex' => '',
 //    'message_can_not_contain_urls_regex' => '(ftp:|http[s]*:|[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})',
 
-    'guest_limit_per_user' => 0,
-    'guest_reminder_limit' => 0,
-    'recipient_reminder_limit' => 0,
+    'guest_limit_per_user' => 12,
+    'guest_reminder_limit' => 12,
+    'recipient_reminder_limit' => 12,
+
+    'guest_file_upload_size' => 1024 * 1024 * 1024 * 50,
 
     'autocomplete' => false, 
     'autocomplete_min_characters' => 3,

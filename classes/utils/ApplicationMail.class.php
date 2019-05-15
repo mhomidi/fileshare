@@ -30,6 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+
 // Require environment (fatal)
 if (!defined('FILESENDER_BASE')) {
     die('Missing environment');
@@ -218,7 +219,7 @@ class ApplicationMail extends Mail
                 }
 
 //                $from_name = Config::get('email_from_name');
-                $from_name = 'Hadi';
+                $from_name = Auth::user()->name;
                 if (is_array($from_name)) {
                     $from_name = ($sender instanceof User) ? array_shift($from_name) : array_pop($from_name);
                 }
@@ -304,8 +305,10 @@ class ApplicationMail extends Mail
             $this->msg_id = '<'.$context.'-'.uniqid().'@filesender>';
             $this->addHeader('X-Filesender-Context', $context);
         }
-        
+
         // Send email
+
+
         return parent::send();
     }
 }

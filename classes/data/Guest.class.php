@@ -730,4 +730,18 @@ class Guest extends DBObject
     {
         return static::getClassName().'#'.($this->id ? $this->id : 'unsaved').'('.$this->email.')';
     }
+
+    public function getMaxAvalableTransferUpload() {
+
+        $openoffset   = Utilities::arrayKeyOrDefault( $_GET, 'openoffset',    0, FILTER_VALIDATE_INT  );
+        $openlimit    = Utilities::arrayKeyOrDefault( $_GET, 'openlimit',    10, FILTER_VALIDATE_INT  );
+        $sum = 0;
+        $transfers = Transfer::fromUser(Auth::user(), false, $openlimit + 1, $openoffset);
+
+        foreach ($transfers as $transfer) {
+            $sum += $transfer->size;
+        }
+
+        return Config::get('guest_file_upload_size') - $sum;
+    }
 }

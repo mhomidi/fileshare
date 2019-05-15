@@ -670,6 +670,33 @@ class Mail
             print_r(nl2br(htmlspecialchars($source)));
         }
     }
+
+    public function sendEmailWithIMS($to, $subject, $body) {
+        $wsdl = "https://ims1.ut.ac.ir/WS/email.asmx?wsdl";
+        $url="https://ims1.ut.ac.ir/WS/email.asmx";
+        $client = new SoapClient($wsdl, array('trace' => 1));
+        $client->__setLocation($url);
+        $ns = 'Sls.TehUniSms.Ws';
+        $headerbody = array('UserName' => "ws_fileshare",
+            'Password' => "Na@ds!98",
+            'Token'=>'00');
+
+        $header = new SOAPHeader($ns, 'ServiceCredential', $headerbody);
+        $client->__setSoapHeaders($header);
+
+        try{
+            $client->SendEmail(array('email' => array('TargetEmailAddress' => $to,
+                'EmailSubject' => $subject,
+                'EmailBody' => $body ,
+                'EmailAttachments' => null ,
+                'SendDate' => '2014-11-12',
+            )));
+            $client->__getLastResponse();
+        } catch (Exception $e) {
+            $result =  "<pre>Exception: ".print_r($e, true)."</pre>\n";
+            echo $result;
+        }
+    }
 }
 
 /**
