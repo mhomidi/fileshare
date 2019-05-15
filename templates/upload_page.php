@@ -316,10 +316,10 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
     </form>
 
     <?php
-        $maximunUpload = Auth::isGuest() ?
+        $maximunUpload = Auth::isGuest() ? AuthGuest::getGuest()->getMaxAvalableTransferUpload() : Auth::user()->getMaxAvalableTransferUpload();
     ?>
 
-    <input type="hidden" id="max_all_uploading_size" value="<?php echo Auth::user()->getMaxAvalableTransferUpload() ?>">
+    <input type="hidden" id="max_all_uploading_size" value="<?php echo $maximunUpload ?>">
 
     <?php if (Config::get('upload_graph_bulk_display')) { ?>
         <div id="graph" class="uploadbulkgraph"><div id="graphDiv" style="width:400px; height:200px; margin:0 auto"><canvas id="speedChart"></canvas></div></div>
