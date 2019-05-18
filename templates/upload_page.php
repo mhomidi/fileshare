@@ -78,18 +78,18 @@ foreach(Transfer::allOptions() as $name => $dfn)  {
                         {tr:clear_all}
                     </a>
                 </div>
-                
-                <div>
-                    <a class="select_files" href="#">
-                        {tr:select_files}
-                    </a>
-                </div>
+<!--                -->
+<!--                <div>-->
+<!--                    <a class="select_files" href="#">-->
+<!--                        {tr:select_files}-->
+<!--                    </a>-->
+<!--                </div>-->
 
                 
-                <div class="stats">
-                    <div class="number_of_files">{tr:number_of_files} : <span class="value"></span></div>
-                    <div class="size">{tr:size} : <span class="value"></span></div>
-                </div>
+<!--                <div class="stats">-->
+<!--                    <div class="number_of_files">{tr:number_of_files} : <span class="value"></span></div>-->
+<!--                    <div class="size">{tr:size} : <span class="value"></span></div>-->
+<!--                </div>-->
             </div>
 
             <div class="uploading_actions" hidden="true">

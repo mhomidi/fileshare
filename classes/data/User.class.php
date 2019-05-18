@@ -234,6 +234,9 @@ class User extends DBObject
         if (strcmp($user->eduPersonAffiliation, 'student') == 0) {
             $user->maxSizeCanUpload = Config::get('student');
         }
+        if (strcmp($user->eduPersonAffiliation, 'guest') == 0) {
+            $user->maxSizeCanUpload = Config::get('guest');
+        }
         else if (strcmp($user->eduPersonAffiliation, 'employee') == 0) {
             if ($user->UTEmployeeTypeCode == Config::get('employeeCode'))
                 $user->maxSizeCanUpload = Config::get('employee');
@@ -242,6 +245,9 @@ class User extends DBObject
                 $user->maxSizeCanUpload = Config::get('teacher');
             }
         }
+
+        error_log($user->eduPersonAffiliation);
+        error_log(gettype($user->UTEmployeeTypeCode));
 
         return $user;
     }

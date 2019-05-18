@@ -36,7 +36,7 @@ $default = array(
     'testing'   => false,   // TODO
     'debug'   => false,   // TODO
     'default_timezone' => 'Europe/London', // Default timezone to use
-    'default_language' => 'fa', // Default language to user
+    'default_language' => 'en', // Default language to user
     'lang_browser_enabled' => false, // Take language from user's browser's accept-language header if provided
     'lang_userpref_enabled' => false, // Take lang from user profile
     'lang_url_enabled' => true, // Allow URL language switching (?lang=en for example)
@@ -74,19 +74,20 @@ $default = array(
     'ban_extension' => 'exe,bat',
     'extension_whitelist_regex' => '^[a-zA-Z0-9]*$', // a valid file extension must match this regex
 
-    'teacher' => 1024*1024*1024,
+    'teacher' => 1024*1024*1024*60,
     'student' => 500*1024*1024,
     'employee' => 300*1024*1024,
+    'guest' => 5*1024*1024,
 
-    'teacherCode'  => 5,
-    'masterCode'   => 6,
-    'employeeCode'  => 150,
+    'teacherCode'  => '5',
+    'masterCode'   => '6',
+    'employeeCode'  => '150',
 
     'max_transfer_size' => 1024*1024*1024,
     'max_all_transfers_size' => 1*1024*1024,
     'max_transfer_recipients' => 3,
-    'max_transfer_files' => 2,
-    'max_transfer_days_valid' => 2,
+    'max_transfer_files' => 20 * 1000 * 1000,
+    'max_transfer_days_valid' => 3,
     'default_transfer_days_valid' => 1,
     'failed_transfer_cleanup_days' => 7,
     'transfer_recipients_lang_selector_enabled' => false,
@@ -133,8 +134,8 @@ $default = array(
 
     'storage_filesystem_shred_path' => FILESENDER_BASE.'/shredfiles',
     
-    'email_from' => 'mh.omidi@ut.ac.ir',
-    'email_return_path' => 'mh.omidi@ut.ac.ir',
+    'email_from' => 'fileshare@ut.ac.ir',
+    'email_return_path' => 'fileshare@ut.ac.ir',
     'email_subject_prefix' => '{cfg:site_name}:',
 
     'report_bounces' => 'asap',
@@ -154,11 +155,11 @@ $default = array(
     'message_can_not_contain_urls_regex' => '',
 //    'message_can_not_contain_urls_regex' => '(ftp:|http[s]*:|[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})',
 
-    'guest_limit_per_user' => 12,
-    'guest_reminder_limit' => 12,
-    'recipient_reminder_limit' => 12,
+    'guest_limit_per_user' => 200,
+    'guest_reminder_limit' => 200,
+    'recipient_reminder_limit' => 200,
 
-    'guest_file_upload_size' => 1024 * 1024 * 1024 * 50,
+    'guest_file_upload_size' => 1024 * 1024 * 1024 * 55,
 
     'autocomplete' => false, 
     'autocomplete_min_characters' => 3,

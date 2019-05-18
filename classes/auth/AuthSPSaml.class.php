@@ -94,6 +94,7 @@ class AuthSPSaml
             }
             
             $raw_attributes = self::loadSimpleSAML()->getAttributes();
+            error_log(json_encode($raw_attributes));
             $attributes = array();
 
             foreach (array('uid', 'name', 'email') as $attr) {
@@ -138,6 +139,15 @@ class AuthSPSaml
                 }
                 else if (is_string($raw_attributes['eduPersonAffiliation']))
                     $attributes['eduPersonAffiliation'] = $raw_attributes['eduPersonAffiliation'];
+            }
+
+            if (array_key_exists('UTEmployeeTypeCode', $raw_attributes)) {
+                if (is_array($raw_attributes['UTEmployeeTypeCode'])) {
+                    $attributes['UTEmployeeTypeCode'] =
+                        $raw_attributes['UTEmployeeTypeCode'][sizeof($raw_attributes['UTEmployeeTypeCode']) - 1];
+                }
+                else if (is_string($raw_attributes['UTEmployeeTypeCode']))
+                    $attributes['UTEmployeeTypeCode'] = $raw_attributes['UTEmployeeTypeCode'];
             }
 
             if (!$attributes['uid']) {

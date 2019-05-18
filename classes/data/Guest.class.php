@@ -733,10 +733,13 @@ class Guest extends DBObject
 
     public function getMaxAvalableTransferUpload() {
 
+        $user = User::fromId($this->userid);
+
         $openoffset   = Utilities::arrayKeyOrDefault( $_GET, 'openoffset',    0, FILTER_VALIDATE_INT  );
         $openlimit    = Utilities::arrayKeyOrDefault( $_GET, 'openlimit',    10, FILTER_VALIDATE_INT  );
         $sum = 0;
-        $transfers = Transfer::fromUser(AuthGuest::getGuest(), false, $openlimit + 1, $openoffset);
+//        $transfers = Transfer::fromUser(AuthGuest::getGuest(), false, $openlimit + 1, $openoffset);
+        $transfers = Transfer::fromUser($user, false, $openlimit + 1, $openoffset);
 
         foreach ($transfers as $transfer) {
             $sum += $transfer->size;
