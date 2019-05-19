@@ -161,6 +161,7 @@ class Guest extends DBObject
      */
     private $transfersCache = null;
     private $trackingEventsCache = null;
+    private $affiliant = null;
     
     /**
      * Constructor
@@ -238,18 +239,21 @@ class Guest extends DBObject
         if (!$from) {
             $from = Auth::user()->email;
         }
-        
+        $affiliant = Auth::user()->getEduPersonAffiliations();
         // If not remote user from address must be one of the user addresses
         if (!Auth::isRemote()) {
             if (!in_array($from, Auth::user()->email_addresses)) {
                 throw new BadEmailException($from);
             }
         }
-        
+
         $guest->userid = Auth::user()->id;
+        $guest->affiliant = Auth::user()->getEduPersonAffiliations();
         $guest->__set('user_email', $from);
         $guest->__set('email', $recipient); // Throws
-        
+//        $guest->__set('affiliant', $affiliant); // Throws
+
+
         $guest->status = GuestStatuses::CREATED;
         $guest->created = $time;
         
@@ -697,6 +701,8 @@ class Guest extends DBObject
             $this->transfer_options = Transfer::validateOptions($value);
         } elseif ($property == 'transfer_count') {
             $this->transfer_count = (int)$value;
+        }elseif ($property == 'affiliant') {
+            $this->affiliant = (int)$value;
         } elseif ($property == 'email') {
             if (!Utilities::validateEmail($value)) {
                 throw new BadEmailException($value);
@@ -744,7 +750,10 @@ class Guest extends DBObject
         foreach ($transfers as $transfer) {
             $sum += $transfer->size;
         }
-
+        error_log("             goli         golii                      ");
+        error_log(json_encode((string)$this->transfer_count));
         return Config::get('guest_file_upload_size') - $sum;
+//        return $user->getMaxAvalableTransferUpload();
     }
+
 }

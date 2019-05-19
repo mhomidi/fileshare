@@ -246,8 +246,9 @@ class User extends DBObject
             }
         }
 
-        error_log($user->eduPersonAffiliation);
-        error_log(gettype($user->UTEmployeeTypeCode));
+        $user->additional_attributes[0] = $user->eduPersonAffiliation;
+        $user->additional_attributes[1] = $user->maxSizeCanUpload;
+        $user->additional_attributes[2] = $user->maxSizeCanUpload;
 
         return $user;
     }
@@ -722,6 +723,16 @@ class User extends DBObject
         }
 
         return $this->maxSizeCanUpload - $sum;
+    }
+
+    public function getAdditionalAttributes() {
+        return $this->additional_attributes;
+    }
+
+    public static function removeAllUser() {
+        foreach (User::all() as $user) {
+            $user->delete();
+        }
     }
 
 }

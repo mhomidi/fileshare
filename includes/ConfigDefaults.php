@@ -77,13 +77,13 @@ $default = array(
     'teacher' => 1024*1024*1024*60,
     'student' => 500*1024*1024,
     'employee' => 300*1024*1024,
-    'guest' => 5*1024*1024,
+    'guest' => 300*1024*1024,
 
     'teacherCode'  => '5',
     'masterCode'   => '6',
     'employeeCode'  => '150',
 
-    'max_transfer_size' => 1024*1024*1024,
+    'max_transfer_size' => 1024*1024*1024*60,
     'max_all_transfers_size' => 1*1024*1024,
     'max_transfer_recipients' => 3,
     'max_transfer_files' => 20 * 1000 * 1000,
@@ -159,7 +159,7 @@ $default = array(
     'guest_reminder_limit' => 200,
     'recipient_reminder_limit' => 200,
 
-    'guest_file_upload_size' => 1024 * 1024 * 1024 * 55,
+    'guest_file_upload_size' => 1024 * 1024 * 1024 * 60,
 
     'autocomplete' => false, 
     'autocomplete_min_characters' => 3,

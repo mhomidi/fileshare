@@ -94,7 +94,6 @@ class AuthSPSaml
             }
             
             $raw_attributes = self::loadSimpleSAML()->getAttributes();
-            error_log(json_encode($raw_attributes));
             $attributes = array();
 
             foreach (array('uid', 'name', 'email') as $attr) {
