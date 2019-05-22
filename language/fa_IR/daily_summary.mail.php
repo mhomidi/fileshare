@@ -1,51 +1,54 @@
-subject: Transfer daily summary
+موضوع: گزارش روزانه انتقال
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-Please find below a summary of downloads for your transfer {transfer.id} (uploaded {date:transfer.created}) :
+در زیر خلاصه‌ی انتقال خود را مشاهده کنید.  {transfer.id} (بزوز شده در {date:transfer.created}) :
 
 {if:events}
 {each:events as event}
-  - Recipient {event.who} downloaded {if:event.what == "archive"}archive{else}file {event.what_name}{endif} on {datetime:event.when}
+  - گیرنده {event.who} دانلود کرده است {if:event.what == "archive"}archive{else}فایل {event.what_name}{endif} در {datetime:event.when}
 {endeach}
 {else}
-No downloads
+دانلود صورت نگرفته
 {endif}
 
-You may find additional details at {transfer.link}
+اطلاعات بیشتر در:
+ {transfer.link}
 
-Best regards,
+آرزوی بهترین‌ها برای شما
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    Please find below a summary of downloads for your transfer {transfer.id} (uploaded {date:transfer.created}) :
+    - گیرنده {event.who} دانلود کرده است {if:event.what == "archive"}archive{else}فایل {event.what_name}{endif} در {datetime:event.when}
 </p>
 
 {if:events}
 <ul>
 {each:events as event}
-    <li>Recipient {event.who} downloaded {if:event.what == "archive"}archive{else}file {event.what_name}{endif} on {datetime:event.when}</li>
+    <li>گیرنده {event.who} دانلود کرده {if:event.what == "archive"}archive{else}فایل {event.what_name}{endif} در {datetime:event.when}</li>
 {endeach}
 </ul>
 {else}
 <p>
-    No downloads
+    دانلود صورت نگرفته
 </p>
 {endif}
 
 <p>
-    You may find additional details at <a href="{transfer.link}">{transfer.link}</a>
+    اطلاعات بیشتر در:
+    <a href="{transfer.link}">{transfer.link}</a>
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها برای شما
+    <br />
     {cfg:site_name}
 </p>

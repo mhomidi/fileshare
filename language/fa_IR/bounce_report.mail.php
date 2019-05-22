@@ -1,51 +1,53 @@
-subject: Message delivery failure
+موضوع: مشکل در ارسال پیام
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-One or more of your recipients failed to receive your message(s) :
+یک یا چند گیرنده این پیام برایشان نرسید.
 
 {each:bounces as bounce}
 {if:bounce.target_type=="Recipient"}
-  - Transfer #{bounce.target.transfer.id} recipient {bounce.target.email} on {datetime:bounce.date} ({bounce.target.transfer.link})
+  - انتقال #{bounce.target.transfer.id} گیرنده {bounce.target.email} در {datetime:bounce.date} ({bounce.target.transfer.link})
 {endif}{if:bounce.target_type=="Guest"}
-  - Guest {bounce.target.email} on {datetime:bounce.date}
+  - مهمان {bounce.target.email} در {datetime:bounce.date}
 {endif}
 {endeach}
 
-You may find additional details at {cfg:site_url}
+اطلاعات بیشتر در:
+‌ {cfg:site_url}
 
-Best regards,
+آرزوی بهترین‌ها برای شما
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    One or more of your recipients failed to receive your message(s) :
+    یک یا چند گیرنده این پیام برایشان نرسید.
 </p>
 
 <ul>
 {each:bounces as bounce}
     <li>
     {if:bounce.target_type=="Recipient"}
-        <a href="{bounce.target.transfer.link}">Transfer #{bounce.target.transfer.id}</a> recipient {bounce.target.email} on {datetime:bounce.date}
+        <a href="{bounce.target.transfer.link}">انتقال #{bounce.target.transfer.id}</a> گیرنده {bounce.target.email} در {datetime:bounce.date}
     {endif}{if:bounce.target_type=="Guest"}
-        Guest {bounce.target.email} on {datetime:bounce.date}
+        مهمان {bounce.target.email} در {datetime:bounce.date}
     {endif}
     </li>
 {endeach}
 </ul>
 
 <p>
-    You may find additional details at <a href="{cfg:site_url}">{cfg:site_url}</a>
+    اطلاعات بیشتر در:‌ <a href="{cfg:site_url}">{cfg:site_url}</a>
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها برای شما
+    <br />
     {cfg:site_name}
 </p>
