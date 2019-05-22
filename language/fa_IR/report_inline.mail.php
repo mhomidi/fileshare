@@ -1,62 +1,68 @@
-subject: Report about {target.type} #{target.id}
+موضوع: گزارش درباره‌ی
+{target.type} #{target.id}
 
 {alternative:plain}
 
-Dear Sir or Madam,
+خانم / آقا
 
-Here is the report about your {target.type}:
+این گزارش از {target.type} شماست:
 
-{target.type} number : {target.id}
+{target.type} شماره: {target.id}
 
-{if:target.type == "Transfer"}
-This transfer has {transfer.files} files with an overall size of {size:transfer.size}.
+{if:target.type == "Transfer"} این انتقال فایل‌های {transfer.files} با حجم کل {size:transfer.size} دارد.
 
-This transfer is/was available until {date:transfer.expires}.
+این انتقال تا تاریخ {date:transfer.expires} اعتبار دارد.
 
-This transfer was sent to {transfer.recipients} recipients.
+
+این انتقال به {transfer.recipients} ارسال شده است.
+
+
+{endif}{if:target.type == "File"} این فایل با نام {file.path} و اندازه‌ی {size:file.size} تا تاریخ {date:file.transfer.expires} اعتبار دارد.
+
+
 {endif}
-{if:target.type == "File"}
-This file is named {file.path}, has a size of {size:file.size} and is/was available until {date:file.transfer.expires}.
-{endif}
-{if:target.type == "Recipient"}
-This recipient has email address {recipient.email} and is/was valid until {date:recipient.expires}.
+{if:target.type == "Recipient"} این گیرنده با ایمیل {recipient.email} تا تاریخ {date:recipient.expires} انقضا دارد
 {endif}
 
-Here is the full log of what happened to the transfer :
+در اینجا لاگی از اتفاقات روی انتقال وجود دارد.
 
 {raw:content.plain}
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    خانم / آقا
 </p>
 
 <p>
-    Here is the report about your {target.type}:<br /><br />
-    
-    {target.type} number : {target.id}<br /><br />
-    
-    {if:target.type == "Transfer"}
-    This transfer has {transfer.files} files with an overall size of {size:transfer.size}.<br /><br />
-    
-    This transfer is/was available until {date:transfer.expires}.<br /><br />
-    
-    This transfer was sent to {transfer.recipients} recipients.
+    این گزارش از {target.type} شماست:
+
+    <br /><br />
+
+    {target.type} شماره: {target.id}
+    <br /><br />
+
+    {if:target.type == "Transfer"} این انتقال فایل‌های {transfer.files} با حجم کل {size:transfer.size} دارد.
+
+    <br /><br />
+
+    این انتقال تا تاریخ {date:transfer.expires} اعتبار دارد.
+    <br /><br />
+
+    این انتقال به {transfer.recipients} ارسال شده است.
+    {endif}{if:target.type == "File"} این فایل با نام {file.path} و اندازه‌ی {size:file.size} تا تاریخ {date:file.transfer.expires} اعتبار دارد.
+
+
     {endif}
-    {if:target.type == "File"}
-    This file is named {file.path}, has a size of {size:file.size} and is/was available until {date:file.transfer.expires}.
-    {endif}
-    {if:target.type == "Recipient"}
-    This recipient has email address {recipient.email} and is/was valid until {date:recipient.expires}.
+    {if:target.type == "Recipient"} این گیرنده با ایمیل {recipient.email} تا تاریخ {date:recipient.expires} انقضا دارد
     {endif}
 </p>
 
 <p>
-    Here is the full log of what happened to the transfer :
+    در اینجا لاگی از اتفاقات روی انتقال وجود دارد.
     <table class="auditlog" rules="rows">
         <thead>
             <th>Date</th>
@@ -69,5 +75,7 @@ Best regards,
     </table>
 </p>
 
-<p>Best regards,<br/>
+<p>
+    آرزوی بهترین‌ها
+    <br/>
 {cfg:site_name}</p>

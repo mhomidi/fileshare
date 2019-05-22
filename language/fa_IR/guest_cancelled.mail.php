@@ -1,25 +1,29 @@
-subject: Guest voucher cancelled
-
+موضوع:‌ گواهی مهمان تمام شد
 {alternative:plain}
 
-Dear Sir or Madam,
+خانم / آقا
 
-A voucher from {guest.user_email} has been cancelled.
+گواهی{guest.user_email}تمام شد.
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    خانم / آقا
 </p>
 
 <p>
-    A voucher from <a href="mailto:{guest.user_email}">{guest.user_email}</a> has been cancelled.
+    گواهی
+    <a href="mailto:{guest.user_email}">{guest.user_email}</a>
+    تمام شد
+
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+
+    <br />
     {cfg:site_name}
 </p>

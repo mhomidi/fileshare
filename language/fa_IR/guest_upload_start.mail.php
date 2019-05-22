@@ -1,17 +1,18 @@
-subject: Guest started to upload files
+موضوع: مهمان آپلود خود را شروع کرد
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-The following guest started to upload files from your voucher:
+مهمان زیر آپلود خود را به شروع کرد:
 
-Guest: {guest.email}
-Voucher link: {cfg:site_url}?s=upload&vid={guest.token}
+مهمان: {guest.email}
+لینک گواهی: {cfg:site_url}?s=upload&vid={guest.token}
 
-The voucher is available until {date:guest.expires} after which time it will be automatically deleted.
+این گواهی تا تاریخ {date:guest.expires} معتبر است
 
-Best regards,
+
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
@@ -21,32 +22,34 @@ Best regards,
 </p>
 
 <p>
-    The following guest started to upload files from your voucher:
+    مهمان زیر آپلود خود را به شروع کرد:
 </p>
 
 <table rules="rows">
     <thead>
-        <tr>
-            <th colspan="2">Voucher details</th>
-        </tr>
+    <tr>
+        <th colspan="2">Voucher details</th>
+    </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Guest</td>
-            <td><a href="mailto:{guest.email}">{guest.email}</a></td>
-        </tr>
-        <tr>
-            <td>Voucher link</td>
-            <td><a href="{cfg:site_url}?s=upload&vid={guest.token}">{cfg:site_url}?s=upload&vid={guest.token}</a></td>
-        </tr>
-        <tr>
-            <td>Valid until</td>
-            <td>{date:guest.expires}</td>
-        </tr>
+    <tr>
+        <td>مهمان</td>
+        <td><a href="mailto:{guest.email}">{guest.email}</a></td>
+    </tr>
+    <tr>
+        <td>لینک گواهی</td>
+        <td><a href="{cfg:site_url}?s=upload&vid={guest.token}">{cfg:site_url}?s=upload&vid={guest.token}</a></td>
+    </tr>
+    <tr>
+        <td>اعتبار</td>
+        <td>{date:guest.expires}</td>
+    </tr>
     </tbody>
 </table>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+
+    <br />
     {cfg:site_name}
 </p>

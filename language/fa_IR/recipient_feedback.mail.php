@@ -1,25 +1,28 @@
-subject: Feedback from your {if:target_type=="recipient"}recipient{endif}{if:target_type=="guest"}guest{endif} {target.email}
+موضوع:‌ بازخورد از {if:target_type=="recipient"} گیرنده {endif}{if:target_type=="guest"}guest{endif}#{target_id} {target.email}
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-We received an email feedback from your {if:target_type=="recipient"}recipient{endif}{if:target_type=="guest"}guest{endif} {target.email}, please find it enclosed.
+ما یک بازخورد از {if:target_type=="recipient"}{endif}{if:target_type=="guest"}{endif}#{target_id} {target.email} دریافت کرده‌ایم. لطفا آن را ببینید
 
-Best regards,
+آٰرزوی بهرین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    We received an email feedback from your {if:target_type=="recipient"}recipient{endif}{if:target_type=="guest"}guest{endif} {target.email}, please find it enclosed.
+    ما یک بازخورد از
+    {if:target_type=="recipient"}{endif}{if:target_type=="guest"}{endif}#{target_id} {target.email}
+    دریافت کرده‌ایم. لطفا آن را ببینید
 </p>
 
 <p>
-    Best regards,<br />
+    آٰرزوی بهرین‌ها
+    <br />
     {cfg:site_name}
 </p>

@@ -1,23 +1,29 @@
-subject: Report about {target.type} #{target.id}
+موضوع: گزارشی درباره‌ی
+{target.type} #{target.id}
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-Please find the report about transfer #{target.id} attached to this email.
+لطفا گزارش انتقال #{target.id} در پیوست پیدا کنید
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    Please find the report about transfer #{target.id} attached to this email.
+    لطفا گزارش انتقال
+
+    #{target.id}
+    در پیوست پیدا کنید
 </p>
 
-<p>Best regards,<br/>
+<p>
+    آرزوی بهترین‌ها
+    <br/>
 {cfg:site_name}</p>

@@ -1,10 +1,9 @@
-subject: Download complete
-
+موضوع:‌ اتمام دانلود
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-Your download of the {if:files>1}files{else}file{endif} below has ended :
+دانلود شما از {if:files>1}فایل‌های{else}فایل{endif} زیر به اتمام رسید :
 
 {if:files>1}{each:files as file}
   - {file.path} ({size:file.size})
@@ -12,17 +11,17 @@ Your download of the {if:files>1}files{else}file{endif} below has ended :
 {files.first().path} ({size:files.first().size})
 {endif}
 
-Best regards,
+آروزی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    Your download of the {if:files>1}files{else}file{endif} below has ended :
+    دانلود شما از {if:files>1}فایل‌های{else}فایل{endif} زیر به اتمام رسید :
 </p>
 
 <p>
@@ -38,6 +37,7 @@ Best regards,
 </p>
 
 <p>
-    Best regards,<br />
+    آروزی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

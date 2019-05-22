@@ -1,25 +1,29 @@
-subject: Download permission removed
+موضوع: اجازه دانلود پاک شد
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-Your permission to download files from transfer n°{transfer.id} has been removed.
+ اجازه‌ی شما برای دانلودانتقال {transfer.id} پاک شده است.
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    Your permission to download files from transfer n°{transfer.id} has been removed.
+    اجازه‌ی شما برای دانلودانتقال
+
+    {transfer.id}
+    پاک شده است.
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

@@ -1,10 +1,9 @@
-subject: Download receipt
-
+موضوع: دانلود گیرنده
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-{if:files>1}Several files{else}A file{endif} you uploaded {if:files>1}have{else}has{endif} been downloaded from {cfg:site_name} by {recipient.email} :
+فایل‌هایی که شما آپلود کردیدتوسط{recipient.email}از{cfg:site_name}دانلود شده است.
 
 {if:files>1}{each:files as file}
   - {file.path} ({size:file.size})
@@ -12,19 +11,27 @@ Dear Sir or Madam,
 {files.first().path} ({size:files.first().size})
 {endif}
 
-You can access your files and view detailed download statistics on the transfers page at {files.first().transfer.link}.
+شما می توانید آمار دانلود‌ها را در{files.first().transfer.link}مشاهده کنید.
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    {if:files>1}Several files{else}A file{endif} you uploaded {if:files>1}have{else}has{endif} been downloaded from {cfg:site_name} by {recipient.email}.
+
+
+    فایل‌هایی که شما آپلود کردید
+    توسط
+    {recipient.email}
+    از
+    {cfg:site_name}
+    دانلود شده است
+
 </p>
 
 <p>
@@ -40,10 +47,14 @@ Best regards,
 </p>
 
 <p>
-    You can access your files and view detailed download statistics on the transfers page at <a href="{files.first().transfer.link}">{files.first().transfer.link}</a>.
+    شما می توانید آمار دانلود‌ها را در <a href="{files.first().transfer.link}">{files.first().transfer.link}</a>
+    مشاهده کنید.
+
+
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

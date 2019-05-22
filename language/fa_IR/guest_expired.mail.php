@@ -1,25 +1,28 @@
-subject: Guest voucher expired
-
+موضوع: منقضی شدن گواهی مهمان
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-A guest voucher from {guest.user_email} has expired.
+گواهی{guest.user_email}منقضی شد.
 
-Best regards,
+آرزوی بهترین ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    A guest voucher from <a href="mailto:{guest.user_email}">{guest.user_email}</a> has expired.
+    گواهی
+    <a href="mailto:{guest.user_email}">{guest.user_email}</a>
+    منقضی شد.
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین ها
+
+    <br />
     {cfg:site_name}
 </p>

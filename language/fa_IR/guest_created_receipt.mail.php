@@ -1,12 +1,11 @@
-subject: Guest voucher sent
-
+موضوع: دسترسی به مهمان فرستاده شد
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-A voucher granting access to {cfg:site_name} has been sent to {guest.email}.
+گواهی دسترسی به{cfg:site_name}به{guest.email}ارسال شد.
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
@@ -16,10 +15,16 @@ Best regards,
 </p>
 
 <p>
-    A voucher granting access to <a href="{cfg:site_url}">{cfg:site_name}</a> has been sent to <a href="mailto:{guest.email}">{guest.email}</a>.
+    گواهی دسترسی به
+    <a href="{cfg:site_url}">{cfg:site_name}</a>
+    به
+    <a href="mailto:{guest.email}">{guest.email}</a>.
+    ارسال شد.
+
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

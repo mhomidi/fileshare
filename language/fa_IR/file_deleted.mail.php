@@ -1,25 +1,30 @@
-subject: File no longer available for download
+موضوع: فایل بیشتری برای آپلود نیست
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا/ خانم
 
-The file {file.path} ({size:file.size}) has been deleted from transfer n°{transfer.id} and is no longer available for download.
+فایل{file.path} ({size:file.size})از انتقال{transfer.id}پاک شده و دیکر قابل دانلود نیست
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا/ خانم
 </p>
 
 <p>
-    The file {file.path} ({size:file.size}) has been deleted from transfer n°{transfer.id} and is no longer available for download.
-</p>
+
+    فایل
+    {file.path} ({size:file.size})
+    از انتقال
+    {transfer.id}
+    پاک شده و دیکر قابل دانلود نیست</p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

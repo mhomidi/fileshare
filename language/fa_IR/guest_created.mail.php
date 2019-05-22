@@ -1,30 +1,29 @@
-subject: Guest voucher received
-subject: {guest.subject}
+موضوع: رسید گواهی
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-Please find below a voucher which grants access to {cfg:site_name}. You can use this voucher to upload one set of files and make it available for download to a group of people.
+در زیر، گواهی مهمان را به صایت{cfg:site_name}مشاهده کنید. شما می‌توانید توسط این گواهی فایل‌های خود را آپلود کنید
 
-Issuer: {guest.user_email}
-Voucher link: {guest.upload_link}
+گواهی دهنده:{guest.user_email}
+لینک گواهی:{guest.upload_link}
 
-The voucher is available until {date:guest.expires} after which time it will be automatically deleted.
+این گواهی تا تاریخ {date:guest.expires} معتبر است
 
-{if:guest.message}Personal message from {guest.user_email}: {guest.message}{endif}
 
-Best regards,
+آرزوی بعترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    Please find below a voucher which grants access to <a href="{cfg:site_url}">{cfg:site_name}</a>. You can use this voucher to upload one set of files and make it available for download to a group of people.
+    در زیر، گواهی مهمان را به صایت{cfg:site_name}مشاهده کنید. شما می‌توانید توسط این گواهی فایل‌های خود را آپلود کنید
+
 </p>
 
 <table rules="rows">
@@ -35,30 +34,22 @@ Best regards,
     </thead>
     <tbody>
         <tr>
-            <td>Issuer</td>
+            <td>گواهی دهنده</td>
             <td><a href="mailto:{guest.user_email}">{guest.user_email}</a></td>
         </tr>
         <tr>
-            <td>Voucher link</td>
+            <td>گیرنده</td>
             <td><a href="{guest.upload_link}">{guest.upload_link}</a></td>
         </tr>
         <tr>
-            <td>Valid until</td>
+            <td>اعتبار</td>
             <td>{date:guest.expires}</td>
         </tr>
     </tbody>
 </table>
 
-{if:guest.message}
 <p>
-    Personal message from {guest.user_email}:
-</p>
-<p class="message">
-    {guest.message}
-</p>
-{endif}
-
-<p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

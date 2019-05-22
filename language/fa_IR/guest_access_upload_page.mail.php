@@ -1,25 +1,24 @@
-subject: Guest access upload page
-
+موضوع: دسترسی مهمان به صفحه‌ی آپلود
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم{guest.email}به صفحه‌ی آپلود دسترسی پیدا کرد.
 
-The guest {guest.email} has accessed to the upload page from your voucher.
-
-Best regards,
+آروزی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    The guest <a href="mailto:{guest.email}">{guest.email}</a> has accessed to the upload page from your voucher.
+    <a href="mailto:{guest.email}">{guest.email}</a>
+    به صفحه‌ی آپلود دسترسی پیدا کرد
 </p>
 
 <p>
-    Best regards,<br />
+    آروزی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>
