@@ -1,10 +1,12 @@
-subject: File{if:transfer.files>1}s{endif} successfully uploaded
-
+موضوع: فایل‌ها با موفقیت آپلود شدند.
 {alternative:plain}
 
-Dear Sir or Madam,
+خانم / آقا
 
-The following {if:transfer.files>1}files have{else}file has{endif} been successfully uploaded to {cfg:site_name}.
+
+فایل‌های زیر با موفقیت در
+{cfg:site_name}
+آپلود شدند.
 
 {if:transfer.files>1}{each:transfer.files as file}
   - {file.path} ({size:file.size})
@@ -12,30 +14,32 @@ The following {if:transfer.files>1}files have{else}file has{endif} been successf
 {transfer.files.first().path} ({size:transfer.files.first().size})
 {endif}
 
-More information: {transfer.link}
+اطلاعات بیشتر {transfer.link}
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    خانم / آقا
 </p>
 
 <p>
-    The following {if:transfer.files>1}files have{else}file has{endif} been successfully uploaded to <a href="{cfg:site_url}">{cfg:site_name}</a>.
+    فایل‌های زیر با موفقیت در
+    <a href="{cfg:site_url}">{cfg:site_name}</a>
+    آپلود شدند.
 </p>
 
 <table rules="rows">
     <thead>
         <tr>
-            <th colspan="2">Transaction details</th>
+            <th colspan="2">جزییات</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>File{if:transfer.files>1}s{endif}</td>
+            <td>فایل‌ها</td>
             <td>
                 {if:transfer.files>1}
                 <ul>
@@ -49,17 +53,18 @@ Best regards,
             </td>
         </tr>
         <tr>
-            <td>Size</td>
+            <td>اندازه</td>
             <td>{size:transfer.size}</td>
         </tr>
         <tr>
-            <td>More information</td>
+            <td>اطلاعات بیشتر</td>
             <td><a href="{transfer.link}">{transfer.link}</a></td>
         </tr>
     </tbody>
 </table>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

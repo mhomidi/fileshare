@@ -1,17 +1,17 @@
-subject: Automatic reminders sent for file shipment n°{transfer.id}
-subject: (automatic reminders sent) {transfer.subject}
+یادآوری خودکار برای انتقال {transfer.id} انجام شد.
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-An automatic reminder was sent to recipients that did not download files from your transfer n°{transfer.id} on {cfg:site_name} ({transfer.link}) :
+یک یادآوری برای دانلود فایل‌ شما برای کسانی که تا به حال انتقال {transfer.id} را در {cfg:site_name} ({transfer.link}) نکرده اند ارسال شد.
+
 
 {each:recipients as recipient}
   - {recipient.email}
 {endeach}
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
@@ -21,7 +21,11 @@ Best regards,
 </p>
 
 <p>
-    An automatic reminder was sent to recipients that did not download files from your <a href="{transfer.link}">transfer n°{transfer.id}</a> on <a href="{cfg:site_url}">{cfg:site_name}</a> :
+    یک یادآوری برای دانلود فایل‌ شما برای کسانی که تا به حال انتقال
+
+    <a href="{transfer.link}">transfer n°{transfer.id}</a> را در <a href="{cfg:site_url}">{cfg:site_name}</a>
+    نکرده اند ارسال شد.
+
 </p>
 
 <p>
@@ -33,6 +37,7 @@ Best regards,
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

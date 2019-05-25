@@ -1,26 +1,37 @@
-subject: File(s) no longer available for download
-subject: (files no longer available) {transfer.subject}
+موضوع: فایلی برای دانلود دیگر موجود نیست
+موضوع: (files no longer available) {transfer.subject}
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-The transfer n°{transfer.id} has been deleted from {cfg:site_name} by the sender ({transfer.user_email}) and is no longer available for download.
 
-Best regards,
+
+انتقال {transfer.id} از {cfg:site_name} توسط {transfer.user_email}پاک شد و دیگر قابل دانلود نیست.
+
+
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    The transfer n°{transfer.id} has been deleted from <a href="{cfg:site_url}">{cfg:site_name}</a> by the sender (<a href="mailto:{transfer.user_email}">{transfer.user_email}</a>) and is no longer available for download.
+    انتقال
+    {transfer.id}
+    از
+    <a href="{cfg:site_url}">{cfg:site_name}</a>
+    توسط
+    (<a href="mailto:{transfer.user_email}">{transfer.user_email}</a>)
+    پاک شد و دیگر قابل دانلود نیست.
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+
+    <br />
     {cfg:site_name}
 </p>

@@ -1,13 +1,14 @@
-subject: File(s) deleted
-subject: (files deleted) {transfer.subject}
+موضوع: فایل‌ها پاک شدند
+موضوع:‌ (files deleted) {transfer.subject}
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-Your transfer n°{transfer.id} has been deleted from {cfg:site_name} and is no longer available for download ({transfer.link}).
 
-Best regards,
+انتقال {transfer.id} از {cfg:site_name} پاک شد و دیگر قابل دانلود نیست. ({transfer.link}).
+
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
@@ -17,10 +18,17 @@ Best regards,
 </p>
 
 <p>
-    Your <a href="{transfer.link}">transfer n°{transfer.id}</a> has been deleted from <a href="{cfg:site_url}">{cfg:site_name}</a> and is no longer available for download.
+    انتقال
+    <a href="{transfer.link}">
+        {transfer.id}</a>
+    از
+    <a href="{cfg:site_url}">{cfg:site_name}</a>
+    پاک شد و دیگر قابل دانلود نیست.
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+
+    <br />
     {cfg:site_name}
 </p>

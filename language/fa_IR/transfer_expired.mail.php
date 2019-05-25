@@ -1,26 +1,31 @@
-subject: File(s) no longer available for download
-subject: (files no longer available) {transfer.subject}
+موضوع: فایلی برای دانلود دیگر موجود نیست
+موضوع: (files no longer available) {transfer.subject}
 
 {alternative:plain}
 
-Dear Sir or Madam,
+خانم / آقا
 
-The file shipment n°{transfer.id} has expired and is no longer available for download.
+فایلها از انتقال
+{transfer.id}
+منقضی شده و دیگر قابل دانلود نیستند.
 
-Best regards,
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    خانم / آقا
 </p>
 
 <p>
-    The file shipment n°{transfer.id} has expired and is no longer available for download.
+    فایلها از انتقال
+    {transfer.id}
+    منقضی شده و دیگر قابل دانلود نیستند.
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>

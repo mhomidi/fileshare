@@ -1,26 +1,32 @@
-subject: File(s) expired
-subject: (files expired) {transfer.subject}
+ موضوع:‌ فایل‌ها منقضی شدند
+موضوع: (files expired) {transfer.subject}
 
 {alternative:plain}
 
-Dear Sir or Madam,
+آقا / خانم
 
-Your transfer n°{transfer.id} has expired and is no longer available for download ({transfer.link}).
 
-Best regards,
+فایلها از انتقال
+{transfer.id}
+منقضی شده و دیگر قابل دانلود نیستند.({transfer.link}).
+
+آرزوی بهترین‌ها
 {cfg:site_name}
 
 {alternative:html}
 
 <p>
-    Dear Sir or Madam,
+    آقا / خانم
 </p>
 
 <p>
-    Your <a href="{transfer.link}">transfer n°{transfer.id}</a> has expired and is no longer available for download.
+    فایلها از
+    <a href="{transfer.link}">انتقال{transfer.id}</a>
+    منقضی شده و دیگر قابل دانلود نیستند.
 </p>
 
 <p>
-    Best regards,<br />
+    آرزوی بهترین‌ها
+    <br />
     {cfg:site_name}
 </p>
